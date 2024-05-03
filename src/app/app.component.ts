@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
@@ -15,16 +15,22 @@ import {TheFooterContentComponent} from "./public/components/the-footer-content/
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = '2Square-Frontend';
   showSidebar: boolean = false;
-
-  constructor(private router: Router) {
+  load:any =null
+  ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         // @ts-ignore
-        this.showSidebar = event.url !== '/login' && event.url !== '/sign-in';
+        this.showSidebar = event.url !== '/login' && event.url !== '/sign-in' && event.url !== '/';
+        if (this.showSidebar) {
+          this.load=1;
+        }
       }
     });
+  }
+  constructor(private router: Router) {
+
   }
 }

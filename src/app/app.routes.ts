@@ -20,7 +20,6 @@ export const routes: Routes = [
   { path: 'sign-in', component: UsersSignInComponent},
   { path: 'games', component: MathGamesViewComponent},
   { path: 'configuration/:id', component: UsersConfigurationComponent},
-  { path: '', component: TheSidebarContentComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent },
   { path: 'game/screen/:id',component: GameScreenComponent},
