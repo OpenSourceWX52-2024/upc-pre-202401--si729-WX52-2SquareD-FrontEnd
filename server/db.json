@@ -16,6 +16,7 @@
       "lastName": "Doe",
       "email": "janedoe@example.com",
       "password": "12ne6"
+
     },
     {
       "id": 3,
@@ -24,6 +25,7 @@
       "lastName": "Beam",
       "email": "jimbeam@example.com",
       "password": "12Jim56"
+
     },
     {
       "id": 4,
@@ -32,6 +34,7 @@
       "lastName": "Jackson",
       "email": "janetjackson@example.com",
       "password": "1Janet56"
+
     },
     {
       "id": 5,
@@ -40,6 +43,7 @@
       "lastName": "Bream",
       "email": "luckbream@example.com",
       "password": "12Luck6"
+
     },
     {
       "id": 6,
@@ -48,6 +52,7 @@
       "lastName": "Dean",
       "email": "karldean@example.com",
       "password": "1Dean456"
+
     }
   ],
   "students": [
