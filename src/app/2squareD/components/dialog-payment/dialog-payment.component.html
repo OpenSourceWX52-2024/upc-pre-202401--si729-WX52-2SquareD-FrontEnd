@@ -1,0 +1,31 @@
+<div class="dialog">
+<h2 mat-dialog-title>Método de pago</h2>
+<div class="form-field">
+<mat-dialog-content>
+  <p>Por favor, introduce los detalles de tu tarjeta de crédito:</p>
+  <mat-form-field>
+    <mat-label>Nombres y apellidos</mat-label>
+    <input matInput [(ngModel)]="data.cardHolderName">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Número de la tarjeta</mat-label>
+    <input matInput [(ngModel)]="data.cardNumber">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Fecha de vencimiento</mat-label>
+    <input matInput [(ngModel)]="data.expiryDate">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Código de seguridad</mat-label>
+    <input matInput [(ngModel)]="data.securityCode">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Pagar</button>
+</mat-dialog-actions>
+</div>
+</div>

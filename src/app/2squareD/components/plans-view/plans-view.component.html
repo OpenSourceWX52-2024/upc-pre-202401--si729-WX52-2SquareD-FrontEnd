@@ -1,0 +1,25 @@
+<div class="rounded-box" [style.background]="currentPlanColor">
+  {{currentPlan}}
+</div>
+
+<div class="card-container">
+  <div class="card2">
+    <h2>Plan Gratuito</h2>
+    <ul>
+      <li>Juegos Singleplayer</li>
+      <li>Herramientas Estándar</li>
+    </ul>
+    <button (click)="resetPlan()">LO TIENES</button>
+  </div>
+
+  <div class="card1">
+    <h2>Plan Premium</h2>
+    <ul>
+      <li>Todos los Juegos Disponibles</li>
+      <li>Herramientas Premium</li>
+    </ul>
+    <button (click)="changePlan('Plan Premium', 'linear-gradient(to right, #fab244, #e6342e)')">{{buttonText}}</button>
+  </div>
+</div>
+
+

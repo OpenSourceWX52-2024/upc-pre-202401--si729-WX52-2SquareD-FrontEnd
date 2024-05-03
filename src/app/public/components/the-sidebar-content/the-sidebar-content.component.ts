@@ -6,12 +6,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {RouterLink, RouterOutlet} from "@angular/router";
+import {TheFooterContentComponent} from "../the-footer-content/the-footer-content.component";
 
 @Component({
   selector: 'app-the-sidebar-content',
   standalone: true,
   imports: [
-    MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, MatListModule, RouterLink, RouterOutlet
+    MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, MatListModule, RouterLink, RouterOutlet, TheFooterContentComponent
   ],
   templateUrl: './the-sidebar-content.component.html',
   styleUrl: './the-sidebar-content.component.css'
@@ -19,7 +20,7 @@ import {RouterLink, RouterOutlet} from "@angular/router";
 export class TheSidebarContentComponent {
   mobileQuery: MediaQueryList;
 
-  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"},{name:"Configuración",path:"/configuration"}]
+  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"},{name:"Configuración",path:"/configuration"},{name:"Planes", path:"/plans"}];
 
   fillerContent = Array.from(
     {length: 50},
