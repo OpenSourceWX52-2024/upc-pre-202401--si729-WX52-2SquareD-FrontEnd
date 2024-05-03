@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MathGamesApiService } from './math-games-api.service';
+import { TagsApiService } from './tags-api.service';
 
-describe('MathGamesApiService', () => {
-  let service: MathGamesApiService;
+describe('TagsApiService', () => {
+  let service: TagsApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MathGamesApiService);
+    service = TestBed.inject(TagsApiService);
   });
 
   it('should be created', () => {

@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import {BaseService} from "../../shared/services/base.service";
-import {User} from "../models/user.entity";
+import {Category} from "../models/category.entity";
 
 @Injectable({
   providedIn: 'root'
 })
-export class UsersApiService extends BaseService<User>{
+export class CategoriesApiService extends BaseService<Category>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEndpoint = '/users';
+    this.resourceEndpoint = '/categories';
   }
 
 }
