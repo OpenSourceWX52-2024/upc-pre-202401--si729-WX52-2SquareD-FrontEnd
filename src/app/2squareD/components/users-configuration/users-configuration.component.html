@@ -1,0 +1,54 @@
+<mat-card class="example-card">
+  <mat-card-header class="card-header">
+    <div mat-card-avatar class="avatar-config"><img [src]="'assets/man-photo-profile.png'" width="100px"></div>
+    <div>
+      <mat-card-title>Nombre: Dilan Pandu</mat-card-title>
+      <mat-card-subtitle>Email: MathOne&#64;gmail.com</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+</mat-card>
+
+<mat-grid-list cols="2" rowHeight="4:1">
+  <mat-grid-tile>
+    <div>
+      <p>Nombre:</p>
+      <mat-form-field>
+        <input matInput placeholder="Nombre">
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <p>Contraseña:</p>
+      <mat-form-field>
+        <input matInput placeholder="Contraseña">
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <p>Correo:</p>
+      <mat-form-field>
+        <input matInput placeholder="Correo">
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <p>Nueva Contraseña:</p>
+      <mat-form-field>
+        <input matInput placeholder="Nueva Contraseña">
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<div class="button-container">
+  <button mat-button class="button-1">Guardar Cambios</button>
+</div>
+<hr class="separation-line">
+<div class="center-content">
+  <label>En caso quiera eliminar su cuenta de forma permanente, para abandonar nuestro producto hágalo através del siguiente botón</label>
+  <button mat-button class="button-2">Desactivar Cuenta</button>
+</div>
+

@@ -19,7 +19,7 @@ import {RouterLink, RouterOutlet} from "@angular/router";
 export class TheSidebarContentComponent {
   mobileQuery: MediaQueryList;
 
-  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"}]
+  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"},{name:"Configuración",path:"/configuration"}]
 
   fillerContent = Array.from(
     {length: 50},
