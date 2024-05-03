@@ -1,1 +1,25 @@
-<p>users-sign-in works!</p>
+<div class="rounded-box">
+  <div class="left-side">
+    <img src="assets/signin-image-1.png" alt="loginimage" width="300px">
+  </div>
+  <div class="right-side">
+    <div class="form-container">
+      <img src="assets/logoApp.png" alt="logoapp" width="100px">
+
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Correo</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <button  mat-raised-button class="register">Registrarse</button>
+      <p class="have-account" (click)="redirectToLogin()">Tengo cuenta</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.rounded-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  width: 850px;
+  height: 450px;
+  background: #c8c8c8;
+}
+
+.left-side, .right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  max-width: 100%;
+  height: auto;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.register {
+  background-color: #32328a !important;
+  color: white !important;
+}
+
+
+.have-account {
+  margin-top:10px;
+  color: #00BFFF;
+}

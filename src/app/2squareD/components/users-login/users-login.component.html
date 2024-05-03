@@ -14,9 +14,9 @@
         <mat-label>Contraseña</mat-label>
         <input matInput>
       </mat-form-field>
-      <button  mat-raised-button>Iniciar sesión</button>
+      <button  mat-raised-button class="login-button">Iniciar sesión</button>
       <p class="forgot-password" >¿Olvidaste tu contraseña?</p>
-      <p class="create-account">Crear cuenta</p>
+      <p class="create-account" (click)="redirectToSignin()">Crear cuenta</p>
     </div>
   </div>
 </div>
