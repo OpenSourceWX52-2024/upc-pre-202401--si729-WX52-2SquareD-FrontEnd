@@ -1,0 +1,43 @@
+.section-game {
+  position: relative; /* Permite posicionar los botones de navegación de forma absoluta */
+}
+.carousel {
+  overflow: hidden;
+  width: 325px; /* Ancho del carrusel, ajusta según necesites */
+  margin: auto;
+  position: relative;
+}
+
+.items-container {
+  display: flex;
+  transition: margin-left 0.5s;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 100px; /* Ancho de cada elemento, ajusta según necesites */
+  height: 100px; /* Altura de cada elemento, ajusta según necesites */
+  margin: 5px;
+  background-color: #ccc; /* Color de fondo de los elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.prev-btn {
+  left: 30%; /* Ajusta la posición horizontal del botón "Anterior" según sea necesario */
+}
+
+.next-btn {
+  right: 30%; /* Ajusta la posición horizontal del botón "Siguiente" según sea necesario */
+}
