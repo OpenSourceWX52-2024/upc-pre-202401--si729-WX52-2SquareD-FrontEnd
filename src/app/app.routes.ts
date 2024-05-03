@@ -1,10 +1,14 @@
 import { Routes } from '@angular/router';
 
+// @ts-ignore
 import {HomeViewComponent} from "./public/pages/home-view/home-view.component";
+// @ts-ignore
 import {UsersLoginComponent} from "./2squareD/components/users-login/users-login.component";
 import {UsersSignInComponent} from "./2squareD/components/users-sign-in/users-sign-in.component";
 import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-games-view.component";
+// @ts-ignore
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
+// @ts-ignore
 import {UsersConfigurationComponent} from "./2squareD/components/users-configuration/users-configuration.component";
 import {TheSidebarContentComponent} from "./public/components/the-sidebar-content/the-sidebar-content.component";
 import {GameScreenComponent} from "./2squareD/components/game-screen/game-screen.component";
@@ -17,5 +21,5 @@ export const routes: Routes = [
   { path: '', component: TheSidebarContentComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent },
-  { path: 'gamescreen/:id',component: GameScreenComponent}
+  { path: 'game/screen/:id',component: GameScreenComponent}
 ];
