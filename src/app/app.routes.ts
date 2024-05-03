@@ -6,13 +6,15 @@ import {UsersSignInComponent} from "./2squareD/components/users-sign-in/users-si
 import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-games-view.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {UsersConfigurationComponent} from "./2squareD/components/users-configuration/users-configuration.component";
+import {TheSidebarContentComponent} from "./public/components/the-sidebar-content/the-sidebar-content.component";
 
 export const routes: Routes = [
   { path: 'home/:id', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
   { path: 'games', component: MathGamesViewComponent},
-  {path: 'configuration', component: UsersConfigurationComponent},
+  { path: 'configuration/:id', component: UsersConfigurationComponent},
+  { path: '', component: TheSidebarContentComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];

@@ -1,11 +1,12 @@
 import {MediaMatcher} from '@angular/cdk/layout';
-import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
+import {ChangeDetectorRef, Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {RouterLink, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterOutlet, ActivatedRoute, Router} from "@angular/router";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-the-sidebar-content',
@@ -16,20 +17,16 @@ import {RouterLink, RouterOutlet} from "@angular/router";
   templateUrl: './the-sidebar-content.component.html',
   styleUrl: './the-sidebar-content.component.css'
 })
-export class TheSidebarContentComponent {
+export class TheSidebarContentComponent implements OnInit{
   mobileQuery: MediaQueryList;
-
+  userId:any="1";
   fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"},{name:"Configuración",path:"/configuration"}]
 
-  fillerContent = Array.from(
-    {length: 50},
-    () =>
-      `hola`,
-  );
-
   private _mobileQueryListener: () => void;
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private activatedRoute : ActivatedRoute) {
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    console.log(activatedRoute);
+    console.log(this.userId);
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -37,6 +34,10 @@ export class TheSidebarContentComponent {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  ngOnInit() {
+
   }
 
 }
