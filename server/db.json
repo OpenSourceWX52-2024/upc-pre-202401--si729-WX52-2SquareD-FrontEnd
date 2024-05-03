@@ -6,42 +6,48 @@
       "username": "teacher-one",
       "firstName": "John",
       "lastName": "Doe",
-      "email": "johndoe@example.com"
+      "email": "johndoe@example.com",
+      "password": "1"
     },
     {
       "id": 2,
       "username": "student-one",
       "firstName": "Jane",
       "lastName": "Doe",
-      "email": "janedoe@example.com"
+      "email": "janedoe@example.com",
+      "password": "2"
     },
     {
       "id": 3,
       "username": "teacher-two",
       "firstName": "Jim",
       "lastName": "Beam",
-      "email": "jimbeam@example.com"
+      "email": "jimbeam@example.com",
+      "password": "3"
     },
     {
       "id": 4,
       "username": "student-two",
       "firstName": "Janet",
       "lastName": "Jackson",
-      "email": "janetjackson@example.com"
+      "email": "janetjackson@example.com",
+      "password": "4"
     },
     {
       "id": 5,
       "username": "teacher-three",
       "firstName": "Luck",
       "lastName": "Bream",
-      "email": "luckbream@example.com"
+      "email": "luckbream@example.com",
+      "password": "5"
     },
     {
       "id": 6,
       "username": "student-three",
       "firstName": "Karl",
       "lastName": "Dean",
-      "email": "karldean@example.com"
+      "email": "karldean@example.com",
+      "password": "6"
     }
   ],
   "students": [
