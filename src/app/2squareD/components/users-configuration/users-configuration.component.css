@@ -1,0 +1,115 @@
+.example-card {
+  width: 70%; /* Ajusta el ancho al 100% para que ocupe todo el espacio disponible */
+  height: auto; /* Ajusta la altura a auto para que se ajuste al contenido */
+  margin: 0 auto; /* Centra la tarjeta horizontalmente */
+  overflow: hidden; /* Evita que el contenido se salga de la tarjeta */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta esto a la altura del contenedor */
+}
+
+.avatar-config {
+  background-size: cover;
+  height: 100px; /* Ajusta la altura a un valor fijo */
+  width: 100px ; /* Ajusta el ancho a un valor fijo */
+  border-radius: 50% ; /* Esto hace que la imagen sea circular */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten dentro de la tarjeta */
+}
+
+.card-header div {
+  margin-left: 10px;
+}
+
+.button-1 {
+  background-color: #3a3a88 !important;
+  color: white !important;
+   /* Ajusta este valor según tus necesidades */
+}
+.button-2 {
+  background-color: #803a3a !important;
+  color: white !important;
+  /* Ajusta este valor según tus necesidades */
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* Configuración del grid */
+mat-grid-list {
+  width: 100%; /* Ajusta el ancho del grid al 50% */
+  margin: 0 auto; /* Centra el grid horizontalmente */
+}
+
+mat-grid-tile {
+  display: flex; /* Utiliza un diseño de flexbox */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: start; /* Alinea los elementos al inicio */
+  padding: 10px; /* Ajusta el padding para crear separaciones entre los tiles */
+}
+
+p, mat-form-field {
+  display: block; /* Hace que los elementos ocupen su propia línea */
+  margin-bottom: 10px; /* Añade un margen inferior a los elementos p */
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc; /* Cambia el color según tus necesidades */
+  margin: 20px 0; /* Ajusta el margen según tus necesidades */
+}
+
+label {
+  display: block; /* Hace que el label ocupe su propia línea */
+  margin: 10px 0; /* Añade un margen alrededor del label */
+}
+.separation-line {
+  border: none;
+  border-top: 2px solid #000; /* Cambia el color según tus necesidades */
+  margin: 20px 0; /* Ajusta el margen según tus necesidades */
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .example-card {
+    width: 100%;
+  }
+
+  mat-grid-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .example-card {
+    width: 80%;
+  }
+
+  mat-grid-list {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .example-card {
+    width: 70%;
+  }
+
+  mat-grid-list {
+    width: 70%;
+  }
+}

@@ -5,13 +5,14 @@ import {UsersLoginComponent} from "./2squareD/components/users-login/users-login
 import {UsersSignInComponent} from "./2squareD/components/users-sign-in/users-sign-in.component";
 import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-games-view.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
+import {UsersConfigurationComponent} from "./2squareD/components/users-configuration/users-configuration.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
   { path: 'games', component: MathGamesViewComponent},
-
+  {path: 'configuration', component: UsersConfigurationComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
