@@ -1,0 +1,12 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: white !important;
+}
+.dialog{
+  background: linear-gradient(to bottom, #f3f3f3, #135287);
+  color: white !important;
+}

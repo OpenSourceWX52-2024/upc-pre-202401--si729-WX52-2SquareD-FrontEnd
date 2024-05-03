@@ -1,0 +1,73 @@
+.rounded-box {
+  border-radius: 50px;
+  padding: 20px;
+  width: 100%; /* Cambia a 100% para que ocupe todo el ancho disponible */
+  max-width: 800px; /* Establece un ancho máximo para que no se haga demasiado grande en pantallas grandes */
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: normal;
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  color: white;
+  font-size: 28px;
+  font-family: 'Alfa Slab One', cursive;
+  background: linear-gradient(to right, #4fe28b, #3f9ee9);
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .rounded-box {
+    font-size: 20px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    height: 40px; /* Reduce la altura para pantallas pequeñas */
+    line-height: 40px; /* Ajusta la alineación vertical del texto */
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Añade esta línea si quieres que las tarjetas se envuelvan a la siguiente línea en pantallas pequeñas */
+}
+
+.card1 li, .card2 li {
+  text-align: left;
+}
+.card1 {
+  background: linear-gradient(to right, #fab244, #e6342e);
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.card2 {
+  background: linear-gradient(to right, #4ee18a, #3fa0e3);
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.card button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent; /* Cambiado de #259cb6 a transparent */
+  color: white;
+  cursor: pointer;
+}

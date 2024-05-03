@@ -12,6 +12,8 @@ import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-foun
 import {UsersConfigurationComponent} from "./2squareD/components/users-configuration/users-configuration.component";
 import {TheSidebarContentComponent} from "./public/components/the-sidebar-content/the-sidebar-content.component";
 import {GameScreenComponent} from "./2squareD/components/game-screen/game-screen.component";
+import {PlansViewComponent} from "./2squareD/components/plans-view/plans-view.component";
+
 export const routes: Routes = [
   { path: 'home/:id', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
@@ -21,5 +23,8 @@ export const routes: Routes = [
   { path: '', component: TheSidebarContentComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent },
-  { path: 'game/screen/:id',component: GameScreenComponent}
+  { path: 'game/screen/:id',component: GameScreenComponent},
+  { path: 'plans', component: PlansViewComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent }
 ];
