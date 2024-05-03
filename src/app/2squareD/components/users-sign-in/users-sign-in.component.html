@@ -8,17 +8,17 @@
 
       <mat-form-field>
         <mat-label>Nombre</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="userData.username">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Correo</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="userData.email">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Contraseña</mat-label>
-        <input matInput>
+        <input matInput type="password" [(ngModel)]="userData.password">
       </mat-form-field>
-      <button  mat-raised-button class="register">Registrarse</button>
+      <button mat-raised-button class="register" (click)="registerUser()">Registrarse</button>
       <a class="have-account" (click)="redirectToLogin()">Tengo cuenta</a>
     </div>
   </div>
