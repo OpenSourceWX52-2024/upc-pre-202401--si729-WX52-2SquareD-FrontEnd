@@ -19,17 +19,6 @@ jobs:
         with:
           submodules: true
           lfs: false
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18.13.0' # Ensures local scripts run with the right Node.js version
-
-      - name: Build using Oryx in a Docker container
-        run: |
-          docker run --rm -v ${{ github.workspace }}:/repo -w /repo mcr.microsoft.com/appsvc/oryx:latest \
-          oryx build . --platform nodejs --platform-version 18.13.0
-
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
