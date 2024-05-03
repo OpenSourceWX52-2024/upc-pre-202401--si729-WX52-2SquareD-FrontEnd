@@ -23,7 +23,14 @@ import {FormsModule} from "@angular/forms";
 
 export class UsersSignInComponent {
 
-  userData: User;
+  userData: User={
+    id:"",
+    username:"",
+    firstName:"",
+    lastName:"",
+    email:"",
+    password:"",
+  };
   newId:string=""
   constructor(private router: Router,private usersService: UsersApiService) {
     this.userData = {} as User;

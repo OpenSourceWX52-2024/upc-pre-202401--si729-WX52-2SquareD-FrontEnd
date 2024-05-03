@@ -13,6 +13,6 @@ export const routes: Routes = [
   { path: 'sign-in', component: UsersSignInComponent},
   { path: 'games', component: MathGamesViewComponent},
   {path: 'configuration', component: UsersConfigurationComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
