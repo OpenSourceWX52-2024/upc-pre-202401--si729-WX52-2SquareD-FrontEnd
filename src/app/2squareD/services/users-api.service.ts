@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {BaseService} from "../../shared/services/base.service";
 import {HttpClient} from "@angular/common/http";
+
 import {User} from "../models/user.entity";
 
 @Injectable({
@@ -12,4 +13,5 @@ export class UsersApiService extends BaseService<User>{
     super(http);
     this.resourceEndpoint = '/users';
   }
+
 }
