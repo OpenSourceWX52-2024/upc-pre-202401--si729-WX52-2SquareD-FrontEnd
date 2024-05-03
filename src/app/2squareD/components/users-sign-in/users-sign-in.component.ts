@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {AfterContentInit, Component, OnInit} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
+import {UsersApiService} from "../../services/users-api.service";
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-users-sign-in',
@@ -19,7 +20,10 @@ import { Router } from '@angular/router';
 
 export class UsersSignInComponent {
 
-  constructor(private router: Router) { }
+
+  constructor(private router: Router) {
+
+  }
   redirectToLogin() {
     this.router.navigate(['/login']);
   }

@@ -7,7 +7,7 @@ import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-game
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 
 export const routes: Routes = [
-  { path: 'home', component: HomeViewComponent },
+  { path: 'home/:id', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
   { path: 'games', component: MathGamesViewComponent},
