@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {TheSidebarContentComponent} from "./public/components/the-sidebar-content/the-sidebar-content.component";
 
 @Component({
@@ -12,4 +12,14 @@ import {TheSidebarContentComponent} from "./public/components/the-sidebar-conten
 })
 export class AppComponent {
   title = '2Square-Frontend';
+  showSidebar: boolean = false;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // @ts-ignore
+        this.showSidebar = event.url !== '/login' && event.url !== '/sign-in';
+      }
+    });
+  }
 }
