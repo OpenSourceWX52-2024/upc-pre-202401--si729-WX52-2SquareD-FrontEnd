@@ -51,19 +51,27 @@
   padding: 50px;
 }
 
-.container-premium button{
-  background: linear-gradient(to bottom, #FFB546 0%, #FFB546 50%, #FFD494 100%);
-}
-
 .container-premium h1{
   font-family: 'Alfa Slab One', cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
+  line-height: 50px;
 }
 
-.container-cta button {
-  font-size: 1rem;
+.premium-btn {
+  font-family: "Averia Serif Libre", serif;
+  background: linear-gradient(to bottom, #FFB546 0%, #FFB546 50%, #FFD494 100%);
+  font-size: 1.2rem;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
 }
+
+.container-cta{
+  padding-right: 60px;
+}
+
