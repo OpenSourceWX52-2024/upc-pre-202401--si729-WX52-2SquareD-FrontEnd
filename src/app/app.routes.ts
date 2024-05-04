@@ -18,12 +18,10 @@ export const routes: Routes = [
   { path: 'home/:id', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
-  { path: 'games', component: MathGamesViewComponent},
+  { path: 'games/:id', component: MathGamesViewComponent},
   { path: 'configuration/:id', component: UsersConfigurationComponent},
-  { path: '', redirectTo: 'login', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent },
   { path: 'game/screen/:id',component: GameScreenComponent},
-  { path: 'plans', component: PlansViewComponent},
+  { path: 'plans/:id', component: PlansViewComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
