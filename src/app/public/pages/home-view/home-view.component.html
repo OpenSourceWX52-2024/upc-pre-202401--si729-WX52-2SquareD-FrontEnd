@@ -2,13 +2,11 @@
   <h1>Juegos</h1>
   <div class="carousel">
 
-    <div class="items-container" [style.margin-left.px]="-currentIndex * 115">
-      <div *ngFor="let item of items; index as i">
+    <div class="items-container" [style.margin-left.px]="-currentIndex * 140">
+      @for(item of items; track item){
         <mat-card class="item">
           <mat-card-content>
-            <a [routerLink]="['/game/overview/1']">
-              <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="60px">
-            </a>
+            <img [src]="item.src" alt="Imagen" width="60px">
             <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
             <div class="rounded-boxes">
               <div class="rounded-box">
@@ -20,9 +18,9 @@
             </div>
           </mat-card-content>
         </mat-card>
+      }
       </div>
     </div>
-  </div>
 
   <button class="prev-btn" (click)="prev()">&#10094;</button>
   <button class="next-btn" (click)="next()">&#10095;</button>

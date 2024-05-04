@@ -15,7 +15,7 @@
 
 .item {
   flex: 0 0 auto;
-  width: 120px; /* Ancho de cada elemento, ajusta según necesites */
+  width: 130px; /* Ancho de cada elemento, ajusta según necesites */
   height: 120px; /* Altura de cada elemento, ajusta según necesites */
   margin: 5px;
   background-color: #ccc; /* Color de fondo de los elementos */
