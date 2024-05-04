@@ -3,7 +3,7 @@
 }
 .carousel {
   overflow: hidden;
-  width: 420px; /* Ancho del carrusel, ajusta según necesites */
+  width: 900px; /* Ancho del carrusel, ajusta según necesites */
   margin: auto;
   position: relative;
 }
@@ -22,15 +22,14 @@
 }
 .item {
   flex: 0 0 auto;
-  width: 288px; /* Ancho de cada elemento, ajusta según necesites */
+  width: 290px; /* Ancho de cada elemento, ajusta según necesites */
   height: 416px; /* Altura de cada elemento, ajusta según necesites */
-  margin: 5px;
+  margin: 5px 5px 30px 5px;
   background-color: #ffffff; /* Color de fondo de los elementos */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30%;
   border-radius: 20px;
 }
 .prev-btn,
@@ -47,11 +46,11 @@
 }
 .prev-btn {
 
-  left: 30%; /* Ajusta la posición horizontal del botón "Anterior" según sea necesario */
+  left: 25%; /* Ajusta la posición horizontal del botón "Anterior" según sea necesario */
 }
 
 .next-btn {
-  right: 30%; /* Ajusta la posición horizontal del botón "Siguiente" según sea necesario */
+  right: 25%; /* Ajusta la posición horizontal del botón "Siguiente" según sea necesario */
 }
 
 .container-premium{
