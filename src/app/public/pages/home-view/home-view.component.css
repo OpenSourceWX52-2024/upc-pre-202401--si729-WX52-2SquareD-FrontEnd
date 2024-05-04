@@ -44,3 +44,29 @@
 .next-btn {
   right: 30%; /* Ajusta la posición horizontal del botón "Siguiente" según sea necesario */
 }
+
+.container-premium{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
+  padding: 50px;
+}
+
+.container-premium button{
+  background: linear-gradient(to bottom, #FFB546 0%, #FFB546 50%, #FFD494 100%);
+}
+
+.container-premium h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+.container-cta button {
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
