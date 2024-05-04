@@ -55,7 +55,7 @@
   font-family: 'Alfa Slab One', cursive;
   font-size: 2.5rem;
   color: white;
-  line-height: 50px;
+  line-height: 55px;
 }
 
 .premium-btn {
@@ -74,4 +74,31 @@
 .container-cta{
   padding-right: 60px;
 }
+
+.container-progress{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.container-progress h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.5rem;
+  color: #19456C;
+  line-height: 55px;
+}
+
+.redirect-view-progress{
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
+}
+
 
