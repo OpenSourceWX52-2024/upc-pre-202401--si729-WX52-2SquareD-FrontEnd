@@ -22,6 +22,6 @@ export const routes: Routes = [
   { path: 'configuration/:id', component: UsersConfigurationComponent},
   { path: 'game/screen/:id',component: GameScreenComponent},
   { path: 'plans/:id', component: PlansViewComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];

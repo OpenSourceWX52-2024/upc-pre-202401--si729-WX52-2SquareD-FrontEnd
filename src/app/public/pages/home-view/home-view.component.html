@@ -6,7 +6,16 @@
       <div *ngFor="let item of items; index as i">
         <mat-card class="item">
           <mat-card-content>
-            <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="90px">
+            <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="60px">
+            <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
+            <div class="rounded-boxes">
+              <div class="rounded-box">
+                <h3>Ecuaciones</h3> <!-- Título de la primera caja redondeada -->
+              </div>
+              <div class="rounded-box">
+                <h3>Gratuito</h3> <!-- Título de la segunda caja redondeada -->
+              </div>
+            </div>
           </mat-card-content>
         </mat-card>
       </div>
@@ -26,7 +35,7 @@
       </h1>
       <button mat-raised-button color="primary" class="premium-btn" (click)="redirectToPremium()">Hazte Premium</button>
     </div>
-    <img src="assets/login-image-1.png" alt="imagenx" style="width: 200px; height: 200px">
+    <img src="" alt="imagenx" style="width: 200px; height: 200px">
   </div>
 
 
