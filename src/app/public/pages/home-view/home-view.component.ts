@@ -31,5 +31,8 @@ export class HomeViewComponent {
   redirectToPremium() {
     this.router.navigate(['/plans']);
   }
+  redirectToProgress() {
+    this.router.navigate(['/login']);
+  }
 
 }
