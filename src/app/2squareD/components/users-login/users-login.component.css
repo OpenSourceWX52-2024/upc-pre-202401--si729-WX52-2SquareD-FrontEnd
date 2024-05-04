@@ -4,8 +4,8 @@
   align-items: center;
   border: 1px solid #000;
   border-radius: 20px;
-  width: 850px;
-  height: 450px;
+  width: 1162px;
+  height: 717px;
   background: #c8c8c8;
 }
 
@@ -19,23 +19,43 @@
 .left-side img {
   max-width: 100%;
   height: auto;
+  padding-left: 80px;
 }
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-}
 
+
+}
 
 .forgot-password {
-  margin-top:10px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size:  20px;
+
 }
+
+.forgot-password:hover {
+  cursor: pointer;
+}
+
 .create-account {
-  color: #00BFFF;
+  color: #16C79A;
+  font-size:  20px;
 }
+
+.create-account:hover {
+  cursor: pointer;
+}
+
 .login-button {
-  background-color: #32328a !important;
+  background: linear-gradient(90deg, rgba(25,69,107,1) 0%, rgba(49,135,209,1) 100%);
   color: white !important;
+  border-radius: 50px;
+  padding: 10px;
+  width:  194px;
+  height: 60px;
+  font-size:  20px;
 }
