@@ -32,7 +32,7 @@ export class HomeViewComponent {
     this.router.navigate(['/plans']);
   }
   redirectToProgress() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/games']);
   }
 
 }
