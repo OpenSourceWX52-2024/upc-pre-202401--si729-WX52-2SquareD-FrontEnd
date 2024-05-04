@@ -39,5 +39,8 @@ export class HomeViewComponent {
   redirectToPremium() {
     this.router.navigate(['/plans/:id']);
   }
+  redirectToProgress() {
+    this.router.navigate(['/games']);
+  }
 
 }
