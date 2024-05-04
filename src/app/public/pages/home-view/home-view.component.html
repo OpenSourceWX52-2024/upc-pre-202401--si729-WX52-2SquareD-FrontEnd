@@ -1,18 +1,50 @@
 <section class="section-game">
   <h1>Juegos</h1>
   <div class="carousel">
+
     <div class="items-container" [style.margin-left.px]="-currentIndex * 140">
       @for(item of items; track item){
         <mat-card class="item">
           <mat-card-content>
-            <div  >{{ item }}</div>
+            <img [src]="item.src" alt="Imagen {{ item + 1 }}" width="60px">
+            <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
+            <div class="rounded-boxes">
+              <div class="rounded-box">
+                <h3>Ecuaciones</h3> <!-- Título de la primera caja redondeada -->
+              </div>
+              <div class="rounded-box">
+                <h3>Gratuito</h3> <!-- Título de la segunda caja redondeada -->
+              </div>
+            </div>
           </mat-card-content>
         </mat-card>
       }
+      </div>
     </div>
+
+  <button class="prev-btn" (click)="prev()">&#10094;</button>
+  <button class="next-btn" (click)="next()">&#10095;</button>
+</section>
+
+
+<section class="section-body">
+  <div class="container-premium">
+    <div class="container-cta">
+      <h1 style="margin-left: 20px">
+        ¿Quieres tener todos <br> los juegos disponibles? <br>
+      </h1>
+      <button mat-raised-button color="primary" class="premium-btn" (click)="redirectToPremium()">Hazte Premium</button>
+    </div>
+    <img src="assets/login-image-1.png" alt="pic cta premium" style="width: 300px; height: 300px">
   </div>
 
-  <button class="prev-btn" (click)="prev()">Anterior</button>
-  <button class="next-btn" (click)="next()">Siguiente</button>
+  <div class="container-progress">
+    <img src="assets/pic-cta-progress.jpg" alt="pic cta progress" style="width: 375px; height: 300px">
+    <div class="redirect-view-progress">
+        <h1>¡Mira cuanto has <br> mejorado desde que <br> llegaste aquí!</h1>
+        <button mat-raised-button color="primary" class="progress-btn" (click)="redirectToProgress()">Ver progreso</button>
+    </div>
+  </div>
 </section>
+
 

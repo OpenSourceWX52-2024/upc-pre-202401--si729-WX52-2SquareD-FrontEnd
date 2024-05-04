@@ -5,8 +5,29 @@
   justify-content: center;
   margin-bottom: 16px;
   color: white !important;
+  height: auto;
+
+
 }
 .dialog{
-  background: linear-gradient(to bottom, #f3f3f3, #135287);
+  background: linear-gradient(180deg, rgba(106,185,253,1) 0%, rgba(13,19,34,1) 100%);
   color: white !important;
+
+}
+
+button {
+  background: linear-gradient(90deg, rgba(25,69,107,1) 0%, rgba(49,135,209,1) 100%);
+  color: white !important;
+  border-radius: 50px;
+  padding: 10px;
+  width:  194px;
+  height: 60px;
+  font-size:  20px;
+}
+
+.mat-dialog-title{
+  text-align: center;
+  color: white !important;
+  padding: 40px;
+  font-size:  48px;
 }

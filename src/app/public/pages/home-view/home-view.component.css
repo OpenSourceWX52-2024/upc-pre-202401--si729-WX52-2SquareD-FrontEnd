@@ -20,10 +20,10 @@
   margin: 5px;
   background-color: #ccc; /* Color de fondo de los elementos */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .prev-btn,
 .next-btn {
   position: absolute;
@@ -33,11 +33,125 @@
   border: none;
   outline: none;
   cursor: pointer;
+  font-size: 40px;
+  bottom:40%;
 }
 .prev-btn {
+
   left: 30%; /* Ajusta la posición horizontal del botón "Anterior" según sea necesario */
 }
 
 .next-btn {
   right: 30%; /* Ajusta la posición horizontal del botón "Siguiente" según sea necesario */
 }
+
+.container-premium{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
+  padding: 50px;
+}
+
+.container-premium h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 55px;
+}
+
+.premium-btn {
+  font-family: "Averia Serif Libre", serif;
+  background: linear-gradient(to bottom, #FFB546 0%, #FFB546 50%, #FFD494 100%);
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
+}
+/* Estilo para el texto debajo de la imagen */
+p {
+  width: 100%; /* Ajusta el ancho al 100% de la tarjeta */
+  height: 3%; /* Ajusta la altura al 25% de la tarjeta */
+  font-size: 0.8em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%; /* Ajusta el ancho al 100% de la tarjeta */
+  height: 30%; /* Ajusta la altura al 30% de la tarjeta */
+}
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.rounded-box {
+  width: 110%; /* Ajusta el ancho al 100% de la tarjeta */
+  height: 7%; /* Ajusta la altura al 25% de la tarjeta */
+  border: 1px solid #000; /* Color del borde */
+  border-radius: 10px; /* Radio del borde para hacerlo redondeado */
+  padding: 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #469a43 0%, #4fe28b 24%);
+}
+.rounded-box h3 {
+  font-size: 0.5em; /* Ajusta el tamaño de la fuente de los títulos en las cajas redondeadas */
+  margin-top: 20px;
+}
+
+.container-cta{
+  padding-right: 60px;
+}
+
+.container-progress{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.container-progress h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.5rem;
+  color: #19456C;
+  line-height: 55px;
+}
+
+.redirect-view-progress{
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.progress-btn{
+  font-family: "Averia Serif Libre", serif;
+  background: linear-gradient(to bottom, #16C79A 0%, #3EE9BE 50%, #3EE9BE 100%);
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
+}
+
+

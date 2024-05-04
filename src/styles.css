@@ -2,14 +2,17 @@
 
 html, body { height: 100%; }
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Bitter, serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #0c0c0c, #1E90FF);
+  background: linear-gradient(180deg, rgba(25,69,107,1) 34%, rgba(62,157,238,1) 96%);
 }
 
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

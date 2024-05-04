@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogPaymentComponent } from '../dialog-payment/dialog-payment.component';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-plans-view',
@@ -16,7 +17,7 @@ export class PlansViewComponent {
   currentPlanColor = 'linear-gradient(to right, #4fe28b, #3f9ee9)';
   buttonText = 'OBTENER';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(private router: Router,public dialog: MatDialog) {}
 
   changePlan(planName: string, color: string) {
     this.currentPlan = `Tu plan actual: ${planName}`;
