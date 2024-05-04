@@ -6,7 +6,9 @@
       <div *ngFor="let item of items; index as i">
         <mat-card class="item">
           <mat-card-content>
-            <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="60px">
+            <a [routerLink]="['/game/overview/1']">
+              <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="60px">
+            </a>
             <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
             <div class="rounded-boxes">
               <div class="rounded-box">

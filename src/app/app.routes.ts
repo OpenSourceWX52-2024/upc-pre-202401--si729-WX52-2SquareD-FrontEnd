@@ -13,6 +13,7 @@ import {UsersConfigurationComponent} from "./2squareD/components/users-configura
 import {TheSidebarContentComponent} from "./public/components/the-sidebar-content/the-sidebar-content.component";
 import {GameScreenComponent} from "./2squareD/components/game-screen/game-screen.component";
 import {PlansViewComponent} from "./2squareD/components/plans-view/plans-view.component";
+import {GameOverviewComponent} from "./2squareD/components/game-overview/game-overview.component";
 
 export const routes: Routes = [
   { path: 'home/:id', component: HomeViewComponent },
@@ -22,6 +23,7 @@ export const routes: Routes = [
   { path: 'configuration/:id', component: UsersConfigurationComponent},
   { path: 'game/screen/:id',component: GameScreenComponent},
   { path: 'plans/:id', component: PlansViewComponent},
+  { path: 'game/overview/:id', component: GameOverviewComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];

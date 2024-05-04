@@ -1,0 +1,31 @@
+.rounded-image {
+  border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
+  float: left;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.info-card {
+  float:right;
+  margin-right: 100px;
+  margin-top: 50px;
+  width: 700px;
+  height: 300px;
+}
+.mat-card-title {
+  margin-bottom: 20px; /* Ajusta este valor para cambiar el espacio debajo del título */
+}
+
+.mat-card-subtitle {
+  margin-top: 20px; /* Ajusta este valor para cambiar el espacio encima del subtítulo */
+  margin-bottom: 20px; /* Ajusta este valor para cambiar el espacio debajo del subtítulo */
+}
+
+.mat-card-content {
+  margin-top: 20px; /* Ajusta este valor para cambiar el espacio encima de la descripción */
+}
+.play-button {
+  display: block;
+  margin: auto;
+  border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
+  clear: both; /* Esto asegura que el botón se posiciona debajo de cualquier elemento flotante anterior */
+}

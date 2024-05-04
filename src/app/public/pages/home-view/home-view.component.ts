@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from "@angular/material/button";
-import { Router } from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 
 
 
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, CommonModule],
+  imports: [MatCardModule, MatButtonModule, CommonModule, RouterLink],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })
