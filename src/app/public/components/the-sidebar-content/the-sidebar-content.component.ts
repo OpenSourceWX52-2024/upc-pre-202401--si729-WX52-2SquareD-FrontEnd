@@ -32,7 +32,6 @@ export class TheSidebarContentComponent implements OnInit{
   private _mobileQueryListener: () => void;
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private activatedRoute : ActivatedRoute) {
 
-    console.log(activatedRoute);
     console.log(this.userId);
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
