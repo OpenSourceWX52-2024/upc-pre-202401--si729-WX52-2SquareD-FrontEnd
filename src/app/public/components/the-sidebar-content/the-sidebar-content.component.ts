@@ -26,7 +26,7 @@ export class TheSidebarContentComponent implements OnInit{
   userId:any="1";
 
 
-  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"},{name:"Configuración",path:"/configuration"},{name:"Planes", path:"/plans"}];
+  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Progreso",path:"/games"},{name:"Planes", path:"/plans"},{name:"Configuración",path:"/configuration"}];
 
 
   private _mobileQueryListener: () => void;

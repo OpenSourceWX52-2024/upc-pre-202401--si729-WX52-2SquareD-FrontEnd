@@ -13,16 +13,25 @@
   transition: margin-left 0.5s;
 }
 
+.game{
+  font-size: 48px;
+  font-family: 'Alfa Slab One', cursive;
+  margin-top: 40px;
+  margin-left: 30%;
+  margin-bottom: 40px;
+}
 .item {
   flex: 0 0 auto;
-  width: 130px; /* Ancho de cada elemento, ajusta según necesites */
-  height: 120px; /* Altura de cada elemento, ajusta según necesites */
+  width: 288px; /* Ancho de cada elemento, ajusta según necesites */
+  height: 416px; /* Altura de cada elemento, ajusta según necesites */
   margin: 5px;
-  background-color: #ccc; /* Color de fondo de los elementos */
+  background-color: #ffffff; /* Color de fondo de los elementos */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30%;
+  border-radius: 20px;
 }
 .prev-btn,
 .next-btn {
@@ -93,19 +102,25 @@ mat-card-content {
   align-items: center;
   margin-top: 110px;
 }
-
+.game_title{
+  font-size: 1.5em; /* Ajusta el tamaño de la fuente de los títulos en las cajas redondeadas */
+  margin-top: 20px;
+  font-family: Bitter, sans-serif;
+  font-weight: bold;
+}
 .rounded-box {
   width: 110%; /* Ajusta el ancho al 100% de la tarjeta */
   height: 7%; /* Ajusta la altura al 25% de la tarjeta */
   border: 1px solid #000; /* Color del borde */
   border-radius: 10px; /* Radio del borde para hacerlo redondeado */
   padding: 1px;
-
+  color:white;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #469a43 0%, #4fe28b 24%);
+  background: linear-gradient(180deg, rgba(22,199,154,1) 0%, rgba(62,233,190,1) 100%);
 }
+
 .rounded-box h3 {
   font-size: 0.5em; /* Ajusta el tamaño de la fuente de los títulos en las cajas redondeadas */
   margin-top: 20px;
