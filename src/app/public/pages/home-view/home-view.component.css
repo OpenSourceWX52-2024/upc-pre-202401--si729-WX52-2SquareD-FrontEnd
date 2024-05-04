@@ -33,8 +33,11 @@
   border: none;
   outline: none;
   cursor: pointer;
+  font-size: 40px;
+  bottom:40%;
 }
 .prev-btn {
+
   left: 30%; /* Ajusta la posición horizontal del botón "Anterior" según sea necesario */
 }
 
