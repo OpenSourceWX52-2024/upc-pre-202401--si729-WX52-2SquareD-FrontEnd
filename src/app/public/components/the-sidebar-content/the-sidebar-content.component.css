@@ -6,6 +6,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+
 }
 
 .example-is-mobile .example-toolbar {
@@ -16,12 +17,14 @@
 
 h1.example-app-name {
   margin-left: 8px;
+
 }
 
 .example-sidenav-container {
   /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
      causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
   flex: 1;
+
 }
 
 .example-is-mobile .example-sidenav-container {
@@ -36,8 +39,10 @@ h1.example-app-name {
 .sidenav-container{
   min-width: 400px;
   background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
+
 }
 .item-sidenav{
   color: white !important;
 }
+
 

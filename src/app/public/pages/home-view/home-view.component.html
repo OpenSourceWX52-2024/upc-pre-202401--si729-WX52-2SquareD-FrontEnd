@@ -1,19 +1,19 @@
 <section class="section-game">
-  <h1>Juegos</h1>
+  <h1 class="game">Juegos</h1>
   <div class="carousel">
 
     <div class="items-container" [style.margin-left.px]="-currentIndex * 115">
       <div *ngFor="let item of items; index as i">
         <mat-card class="item">
           <mat-card-content>
-            <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="60px">
-            <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
+            <img [src]="item.src" alt="Imagen {{ i + 1 }}" width="264px" height="264px">
+            <p class="game_title">Versusmatic</p> <!-- Texto debajo de la imagen -->
             <div class="rounded-boxes">
               <div class="rounded-box">
                 <h3>Ecuaciones</h3> <!-- Título de la primera caja redondeada -->
               </div>
               <div class="rounded-box">
-                <h3>Gratuito</h3> <!-- Título de la segunda caja redondeada -->
+                <h3>Premium</h3> <!-- Título de la segunda caja redondeada -->
               </div>
             </div>
           </mat-card-content>
