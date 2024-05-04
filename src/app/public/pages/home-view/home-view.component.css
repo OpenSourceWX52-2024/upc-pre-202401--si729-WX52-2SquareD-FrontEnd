@@ -98,7 +98,22 @@
   margin-top: 20px;
   margin-left: 20px;
   font-weight: bold;
+  padding: 50px;
+}
+
+.progress-btn{
+  font-family: "Averia Serif Libre", serif;
+  background: linear-gradient(to bottom, #16C79A 0%, #3EE9BE 50%, #3EE9BE 100%);
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
   padding: 20px 20px;
 }
+
+
 
 
