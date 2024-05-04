@@ -6,26 +6,39 @@
 }
 .info-card {
   float:right;
-  margin-right: 100px;
+  margin-right: 180px;
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 700px;
   height: 300px;
+  border-radius: 20px;
 }
-.mat-card-title {
+mat-card-title {
   margin-bottom: 20px; /* Ajusta este valor para cambiar el espacio debajo del título */
+  font-size: 40px;
+  font-family: 'Alfa Slab One', cursive;
+  color: #1B4972;
 }
 
-.mat-card-subtitle {
+mat-card-subtitle {
   margin-top: 20px; /* Ajusta este valor para cambiar el espacio encima del subtítulo */
   margin-bottom: 20px; /* Ajusta este valor para cambiar el espacio debajo del subtítulo */
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 30px;
+  color: black;
 }
 
-.mat-card-content {
-  margin-top: 20px; /* Ajusta este valor para cambiar el espacio encima de la descripción */
+mat-card-content {
+  margin-top: 5px; /* Ajusta este valor para cambiar el espacio encima de la descripción */
+  font-size: 20px;
+  font-family: 'Averia Serif Libre', sans-serif;
 }
 .play-button {
   display: block;
   margin: auto;
   border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
   clear: both; /* Esto asegura que el botón se posiciona debajo de cualquier elemento flotante anterior */
+  background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
+  color: white;
 }
+
