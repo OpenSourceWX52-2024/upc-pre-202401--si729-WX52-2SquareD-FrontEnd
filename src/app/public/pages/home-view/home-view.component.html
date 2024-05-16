@@ -1,29 +1,8 @@
 <section class="section-game">
   <h1 class="game">Juegos</h1>
   <div class="carousel">
-
-    <div class="items-container" [style.margin-left.px]="-currentIndex * 300">
-      @for(item of items; track item){
-        <mat-card class="item">
-          <mat-card-content>
-            <img [src]="item.src" alt="Imagen" width="60px">
-            <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
-            <div class="rounded-boxes">
-              <div class="rounded-box">
-                <h3>Ecuaciones</h3> <!-- Título de la primera caja redondeada -->
-              </div>
-              <div class="rounded-box">
-                <h3>Premium</h3> <!-- Título de la segunda caja redondeada -->
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
-      }
-      </div>
-    </div>
-
-  <button class="prev-btn" (click)="prev()">&#10094;</button>
-  <button class="next-btn" (click)="next()">&#10095;</button>
+    <div id="cards"></div>
+  </div>
 </section>
 
 
