@@ -1,11 +1,22 @@
-<img class="rounded-image" src="assets/game-screen1.png" alt="Descripción de la imagen">
-<mat-card class="info-card">
-  <mat-card-header>
-    <mat-card-title>Versusmatic</mat-card-title>
-    <mat-card-subtitle>Descripción</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p>"¡Bienvenido a 'Versusmatic', donde los números se convierten en poderosos aliados en batallas épicas! En este emocionante juego multijugador, podrás entrenar a tus MathMons, criaturas mágicas que representan diferentes conceptos matemáticos, como sumas, restas, multiplicaciones y divisiones. Desafía a otros jugadores a duelos donde el conocimiento matemático y la estrategia son clave para la victoria. ¡Conviértete en el Maestro MathMon y demuestra que eres el mejor en batallas donde la mente es tu mayor arma!"</p>
-  </mat-card-content>
-</mat-card>
-<button mat-raised-button class="play-button"  style="color: white" routerLink="/game/screen/1">Jugar</button>
+<div class="game-content">
+    <img [src]="imageSrc" class="centered-image" alt="image">
+  <div class="game-card">
+    <mat-card class="info-card">
+      <mat-card-header>
+        <mat-card-title><h1>{{title}}</h1></mat-card-title>
+        <div class="game-tags">
+          <a color="" class="uno">{{tag1}}</a>
+          <a color="primary" class="dos">{{tag2}}</a>
+          <a class="tres">{{tag3}}</a>
+        </div>
+        <div class="game-description">
+          <mat-card-subtitle><p>{{description}}</p></mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{content}}</p>
+      </mat-card-content>
+    </mat-card>
+    <button mat-raised-button class="play-button"  style="color: white" routerLink="/game/screen/1">{{buttonText}}</button>
+  </div>
+</div>
