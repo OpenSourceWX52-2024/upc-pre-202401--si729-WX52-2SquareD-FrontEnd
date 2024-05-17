@@ -50,10 +50,12 @@ h1 {
 }
 
 .uno {
-  border-radius: 3%;
+  height: 80px;
+  border-radius: 10%;
 }
 
 .dos {
+  height: 100px;
   border-radius: 15%;
 }
 

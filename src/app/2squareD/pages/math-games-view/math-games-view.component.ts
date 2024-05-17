@@ -25,7 +25,7 @@ export class MathGamesViewComponent {
     this.router.navigate(['game/overview/2']);
   }
   redirectToMathVersusmatic() {
-    this.router.navigate(['game/overview/1']);
+    this.router.navigate(['game/overview/3']);
   }
 
   redirectToSubjects(){

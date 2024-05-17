@@ -23,6 +23,6 @@ export class UserProgressViewComponent {
     this.router.navigate(['game/overview/2']);
   }
   redirectToMathVersusmatic() {
-    this.router.navigate(['game/overview/1']);
+    this.router.navigate(['game/overview/3']);
   }
 }

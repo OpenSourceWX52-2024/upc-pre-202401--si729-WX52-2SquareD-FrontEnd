@@ -78,6 +78,10 @@
     padding-top: 50px;
   }
 
+  .game-info2 h3{
+    padding-left: 20px;
+  }
+
   .game-tags{
     display: flex;
     justify-content: center;
