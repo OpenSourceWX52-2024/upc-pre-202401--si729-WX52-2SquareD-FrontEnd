@@ -1,0 +1,86 @@
+.container-view-progress {
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  align-content: center;
+}
+
+.container-myprogress {
+  padding: 70px;
+  margin-left: 330px;
+  margin-right: 330px;
+  margin-bottom: 100px;
+  border: lightgray 1px solid;
+  box-shadow: lightgray 1px 4px 2px;
+  border-radius: 100px;
+  align-items: center;
+  background: linear-gradient(to bottom, #EDEDED 0%, #EDEDED 50%, #FFFFFF 100%);
+}
+
+.container-mygames {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-content: center;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 40px;
+  padding-bottom: 10px;
+  background: -webkit-linear-gradient(0deg, #19466C, #07817E, #3EE9BE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-myprogress h3 {
+  font-family: 'Alfa Slab One', cursive;
+  justify-items: center;
+  align-items: center;
+}
+
+.game {
+  text-align: center;
+  justify-items: center;
+}
+
+.uno {
+  border-radius: 3%;
+}
+
+.dos {
+  border-radius: 15%;
+}
+
+.tres {
+  border-radius: 10%;
+}
+
+.game h3 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #1B4972;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+h4 {
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+}
+
+.game img{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.game img:hover{
+  transform: scale(1.1);
+}
+
+

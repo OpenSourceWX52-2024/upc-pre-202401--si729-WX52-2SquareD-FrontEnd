@@ -1,10 +1,15 @@
 import { Routes } from '@angular/router';
 
 // @ts-ignore
+import {UserProgressViewComponent} from "./2squareD/pages/user-progress-view/user-progress-view.component";
+// @ts-ignore
 import {HomeViewComponent} from "./public/pages/home-view/home-view.component";
 // @ts-ignore
 import {UsersLoginComponent} from "./2squareD/components/users-login/users-login.component";
 import {UsersSignInComponent} from "./2squareD/components/users-sign-in/users-sign-in.component";
+// @ts-ignore
+
+
 import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-games-view.component";
 // @ts-ignore
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
@@ -19,6 +24,7 @@ export const routes: Routes = [
   { path: 'home/:id', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
+  { path: 'my-progress/:id', component: UserProgressViewComponent},
   { path: 'games/:id', component: MathGamesViewComponent},
   { path: 'configuration/:id', component: UsersConfigurationComponent},
   { path: 'game/screen/:id',component: GameScreenComponent},
