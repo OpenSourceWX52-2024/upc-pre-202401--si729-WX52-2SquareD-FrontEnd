@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:host {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 .example-card {
   width: 70%; /* Ajusta el ancho al 100% para que ocupe todo el espacio disponible */
   height: auto; /* Ajusta la altura a auto para que se ajuste al contenido */
@@ -22,7 +28,7 @@
 .card-header {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten dentro de la tarjeta */
+  flex-wrap: wrap;
 }
 
 .card-header div {
@@ -30,14 +36,14 @@
 }
 
 .button-1 {
-  background-color: #3a3a88 !important;
+  background: linear-gradient(180deg, rgba(25,69,107,1) 0%, rgba(49,135,209,1) 100%) !important;
   color: white !important;
-   /* Ajusta este valor según tus necesidades */
+  bottom: 80px;
 }
 .button-2 {
-  background-color: #803a3a !important;
+  background: linear-gradient(180deg, rgba(121,0,0,1) 0%, rgba(255,50,50,1) 100%) !important;
   color: white !important;
-  /* Ajusta este valor según tus necesidades */
+  margin: 3px 0;
 }
 .button-container {
   display: flex;
@@ -45,6 +51,17 @@
   align-items: center;
 
 }
+mat-card-title, mat-card-subtitle{
+ font-size: 24px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+mat-card-subtitle {
+  font-size: 32px;
+  margin: 10px 0 20px 0;
+  color: #19456B !important;
+}
+
 /* Configuración del grid */
 mat-grid-list {
   width: 100%; /* Ajusta el ancho del grid al 50% */
@@ -60,22 +77,24 @@ mat-grid-tile {
 
 p, mat-form-field {
   display: block; /* Hace que los elementos ocupen su propia línea */
-  margin-bottom: 10px; /* Añade un margen inferior a los elementos p */
+  margin-bottom: 10px;
+  color: #19456B !important;/* Añade un margen inferior a los elementos p */
 }
 hr {
   border: none;
   border-top: 1px solid #ccc; /* Cambia el color según tus necesidades */
-  margin: 20px 0; /* Ajusta el margen según tus necesidades */
+  margin: 10px 0; /* Ajusta el margen según tus necesidades */
 }
 
 label {
   display: block; /* Hace que el label ocupe su propia línea */
   margin: 10px 0; /* Añade un margen alrededor del label */
+
 }
 .separation-line {
   border: none;
-  border-top: 2px solid #000; /* Cambia el color según tus necesidades */
-  margin: 20px 0; /* Ajusta el margen según tus necesidades */
+  border-top: 1px solid #000; /* Cambia el color según tus necesidades */
+  margin: 0;
 }
 .center-content {
   display: flex;
