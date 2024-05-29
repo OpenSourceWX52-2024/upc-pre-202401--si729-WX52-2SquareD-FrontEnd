@@ -1,60 +1,48 @@
-  .container-view-progress {
+  .container-games {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    gap: 10px;
     align-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-
-  .container-myprogress {
-      padding: 70px;
-      margin-left: 330px;
-      margin-right: 330px;
-      margin-bottom: 100px;
-      border: lightgray 1px solid;
-      box-shadow: lightgray 1px 4px 2px;
-      border-radius: 100px;
-      align-items: center;
-      background: linear-gradient(to bottom, #EDEDED 0%, #EDEDED 50%, #FFFFFF 100%);
-    }
-
-    .container-mygames {
-      padding-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      align-content: center;
-      border-radius: 50px;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
 
   h1 {
     display: inline-block;
     font-family: 'Alfa Slab One', cursive;
     font-size: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     background: -webkit-linear-gradient(0deg, #19466C, #07817E, #3EE9BE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .container-myprogress h3 {
-    font-family: 'Alfa Slab One', cursive;
-    justify-items: center;
-    align-items: center;
-  }
-
   .game {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    width: 550px;
+    gap: 25px;
+    border: lightgray 1px solid;
+    box-shadow: lightgray 1px 3px 2px;
   }
 
   .uno {
-    border-radius: 3%;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
   }
 
   .dos {
     border-radius: 15%;
+    padding-left: 15px;
   }
 
   .tres {
@@ -64,14 +52,9 @@
   .game h3 {
     font-family: 'Alfa Slab One', cursive;
     color: #1B4972;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-  }
-
-  h4 {
-    font-family: 'Alfa Slab One', cursive;
-    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 40px;
   }
 
   .game img{
@@ -79,8 +62,118 @@
     transition: transform 0.3s ease;
   }
 
-  .game img:hover{
+ /* .game img:hover{
     transform: scale(1.1);
+  }*/
+
+  .game-info1 {
+    padding-top: 55px;
+  }
+  .game-info2 {
+    padding-top: 30px;
+  }
+  .game-info3{
+    justify-items: center;
+
+    padding-top: 50px;
+  }
+
+  .game-info2 h3{
+    padding-left: 20px;
+  }
+
+  .game-tags{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .game-tags button{
+    font-family: "Averia Serif Libre", serif;
+    font-size: 10px;
+    width: 90px;
+    height: 20px;
+    border-radius: 20px;
+  }
+
+  .subject-btn1{
+    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .mode-btn1{
+    background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .type-btn1{
+    background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .subject-btn2{
+    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .mode-btn2{
+    background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .type-btn2{
+    background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .subject-btn3{
+    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .mode-btn3{
+    background: linear-gradient(to bottom, #FF3232 0%, #E14545 50%, #FDA6A6 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+
+  .type-btn3{
+    background: linear-gradient(to bottom, #19456B 0%, #24649C 50%, #3187D1 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
   }
 
 
+/* Estilos para pantallas con un ancho máximo de 600px (por ejemplo, dispositivos móviles) */
+@media (max-width: 600px) {
+  .container-games {
+    width: 10%; /* Ajusta el ancho al 100% de la pantalla */
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    gap: 10px; /* Ajusta el espacio entre los elementos */
+  }
+}
+
+/* Estilos para pantallas con un ancho máximo de 900px (por ejemplo, tablets) */
+@media (max-width: 800px) {
+  .container-games {
+    width: 80%; /* Ajusta el ancho al 80% de la pantalla */
+    flex-direction: column; /* Mantiene la dirección de los elementos en fila */
+    gap: 20px; /* Ajusta el espacio entre los elementos */
+  }
+}

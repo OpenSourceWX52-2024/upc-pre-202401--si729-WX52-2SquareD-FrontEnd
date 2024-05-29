@@ -1,31 +1,42 @@
-
-<div class="container-view-progress"></div>
-<div class="container-myprogress">
-  <h1>Mi progreso</h1>
-  <h3>Eficiencia 40%</h3>
-  <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-  <div class="container-mygames">
+<div class="container-games">
       <div class="game">
-        <h3>FracPizza</h3>
-        <img class="uno" src="assets/game-screen3.png" alt="fracpizza game"
+        <img class="uno" src="assets/game-1-original.png" alt="fracpizza game"
              style="width: 200px; height: 180px" (click)="redirectToMathGamePizza()">
-        <h4>3 partidas</h4>
-        <h4>Record: 2 victorias</h4>
+        <div class="game-info1">
+          <h3>FracPizza</h3>
+          <div class="game-tags">
+            <button mat-raised-button color="primary" class="subject-btn1">Fracciones</button>
+            <button mat-raised-button color="primary" class="type-btn1">Gratuito</button>
+            <button mat-raised-button color="primary" class="mode-btn1">Monojugador</button>
+          </div>
+        </div>
       </div>
-      <div class="game">
+
+    <div class="game">
+      <img class="dos" src="assets/game-2-oficial.png" alt="Calculo mental game"
+         style="width: 200px; height: 180px" (click)="redirectToMathCalculoMental()">
+      <div class="game-info2">
         <h3>Calculo Mental</h3>
-        <img class="dos" src="assets/game-screen2.png" alt="Calculo mental game"
-             style="width: 200px; height: 180px" (click)="redirectToMathCalculoMental()">
-        <h4>3 partidas</h4>
-        <h4>Record: 2 victorias</h4>
+      <div class="game-tags">
+        <button mat-raised-button color="primary" class="subject-btn2" (click)="redirectToSubjects()">Cálculo</button>
+        <button mat-raised-button color="primary" class="type-btn2" (click)="redirectToType()">Gratuito</button>
+        <button mat-raised-button color="primary" class="mode-btn2" (click)="redirectToMode()">Monojugador</button>
       </div>
-      <div class="game">
-        <h3>Versusmatic</h3>
-        <img class="tres" src="assets/game-screen1.png" alt="versusmatic game"
-             style="width: 200px; height: 180px" (click)="redirectToMathVersusmatic()">
-        <h4>3 partidas</h4>
-        <h4>Record: 2 victorias</h4>
-      </div>
+    </div>
+
   </div>
+  <div class="game">
+    <img class="tres" src="assets/game-screen1.png" alt="versusmatic game"
+         style="width: 200px; height: 180px" (click)="redirectToMathVersusmatic()">
+    <div class="game-info3">
+      <h3>Versusmatic</h3>
+      <div class="game-tags">
+        <!--se dejo asignado como botones-->
+        <button mat-raised-button color="primary" class="subject-btn3">Ecuaciones</button>
+        <button mat-raised-button color="primary" class="type-btn3">Premium</button>
+        <button mat-raised-button color="primary" class="mode-btn3">Multijugador</button>
+      </div>
+    </div>
+</div>
 
 </div>

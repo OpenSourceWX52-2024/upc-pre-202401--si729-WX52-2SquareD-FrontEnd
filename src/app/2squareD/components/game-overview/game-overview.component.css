@@ -1,20 +1,36 @@
-.rounded-image {
-  border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
-  float: left;
-  margin-left: 100px;
-  margin-top: 50px;
-}
 .info-card {
   float:right;
-  margin-right: 180px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-right: 15px;
   width: 700px;
-  height: 300px;
+  height: 400px;
   border-radius: 20px;
+  box-shadow: lightgray 1px 3px 2px;
 }
-mat-card-title {
-  margin-bottom: 20px; /* Ajusta este valor para cambiar el espacio debajo del título */
+.info-card mat-card-header {
+  padding-top: 35px;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card mat-card-header mat-card-title {
+  order: 1; /* El título se muetsra primero */
+}
+
+.info-card mat-card-header .game-tags {
+  order: 2; /* Se muetsran después del título */
+  padding-bottom: 20px;
+  justify-content: start;
+}
+
+.game-description {
+  order: 3; /* Se muestran después de las etiquetas */
+}
+
+.info-card mat-card-title h1 {
+  margin-bottom: 20px; /* Espacio debajo del título */
   font-size: 40px;
   font-family: 'Alfa Slab One', cursive;
   color: #1B4972;
@@ -32,13 +48,90 @@ mat-card-content {
   margin-top: 5px; /* Ajusta este valor para cambiar el espacio encima de la descripción */
   font-size: 20px;
   font-family: 'Averia Serif Libre', sans-serif;
+  padding-left: 35px;
 }
 .play-button {
   display: block;
   margin: auto;
+  font-size: 20px;
   border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
   clear: both; /* Esto asegura que el botón se posiciona debajo de cualquier elemento flotante anterior */
   background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
   color: white;
+  width: 100px;
 }
 
+.game-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+  padding-left: 450px;
+  width: 40%;
+  height: 700px;
+}
+
+ .centered-image{
+  width: 460px;
+  height: 490px;
+
+}
+
+.game-card{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.game-card button{
+font-family: "Averia Serif Libre", serif;
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  margin-left: 300px;
+}
+
+.game-tags{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.uno {
+  background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+  color: white !important;
+  border: none;
+  font-family: "Averia Serif Libre", serif;
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+  align-content: center;
+}
+
+.dos {
+  background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
+  color: white !important;
+  border: none;
+  font-family: "Averia Serif Libre", serif;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  align-content: center;
+}
+
+.tres {
+  background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
+  color: white !important;
+  border: none;
+  font-family: "Averia Serif Libre", serif;
+  width: 110px;
+  text-align: center;
+  border-radius: 20px;
+  align-content: center;
+}

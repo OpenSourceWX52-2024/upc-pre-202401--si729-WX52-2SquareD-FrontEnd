@@ -40,7 +40,7 @@ export class HomeViewComponent {
     this.router.navigate(['/plans/:id']);
   }
   redirectToProgress() {
-    this.router.navigate(['games/:id']);
+    this.router.navigate(['my-progress/:id']);
   }
 
 }

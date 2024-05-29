@@ -41,8 +41,22 @@ h1.example-app-name {
   background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
 
 }
-.item-sidenav{
-  color: white !important;
+
+.item-sidenav nav {
+  color: azure;
+  font-weight: bolder;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
 }
 
-
+a{
+  color: azure;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}

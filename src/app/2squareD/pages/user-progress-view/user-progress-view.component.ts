@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
 import {MatProgressBar} from "@angular/material/progress-bar";
 import {Router} from "@angular/router";
-import {MatButton} from "@angular/material/button";
 
 @Component({
-  selector: 'app-math-games-view',
+  selector: 'app-user-progress-view',
   standalone: true,
   imports: [
-    MatProgressBar,
-    MatButton
+    MatProgressBar
   ],
-  templateUrl: './math-games-view.component.html',
-  styleUrl: './math-games-view.component.css'
+  templateUrl: './user-progress-view.component.html',
+  styleUrl: './user-progress-view.component.css'
 })
-export class MathGamesViewComponent {
+export class UserProgressViewComponent {
   constructor(private router: Router) {
   }
 
@@ -26,15 +24,5 @@ export class MathGamesViewComponent {
   }
   redirectToMathVersusmatic() {
     this.router.navigate(['game/overview/3']);
-  }
-
-  redirectToSubjects(){
-    this.router.navigate(['page-not-found']);
-  }
-  redirectToMode(){
-    this.router.navigate(['page-not-found']);
-  }
-  redirectToType(){
-    this.router.navigate(['page-not-found']);
   }
 }
