@@ -26,8 +26,7 @@ export class UsersSignInComponent {
   userData: User={
     id:"",
     username:"",
-    firstName:"",
-    lastName:"",
+    fullname:"",
     email:"",
     password:"",
   };
@@ -45,7 +44,7 @@ export class UsersSignInComponent {
       console.log(response.length +1);
       this.newId = (response.length +1).toString();
       console.log(this.newId)
-      const newUser = new User(this.newId, this.userData.username, "Joe", "Jota", this.userData.email, this.userData.password);
+      const newUser = new User(this.newId, this.userData.username, "Joe Jota", this.userData.email, this.userData.password);
 
       this.createUser(newUser);
     })

@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  serverBasePath: 'https://my-json-server.typicode.com/OpenSourceWX52-2024/server/'
+  serverBasePath: 'http://localhost:8080/api/v1'
 };
