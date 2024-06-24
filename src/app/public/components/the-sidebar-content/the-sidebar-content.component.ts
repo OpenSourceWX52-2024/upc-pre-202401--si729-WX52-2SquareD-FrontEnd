@@ -21,12 +21,14 @@ import {TheFooterContentComponent} from "../the-footer-content/the-footer-conten
   styleUrl: './the-sidebar-content.component.css'
 })
 export class TheSidebarContentComponent implements OnInit{
+
   mobileQuery: MediaQueryList;
+  userRole: string = 'Student';
 
   userId:any="1";
 
 
-  fillerNav = [
+  readonly fillerNav = [
     { name: "Inicio", path: "/home", icon: { src: "assets/icons/home-button.png", type: "custom" } },
     { name: "Juegos", path: "/games", icon: { src: "assets/icons/console.png", type: "custom" } },
     { name: "Progreso", path: "/my-progress", icon: {src: "assets/icons/check.png", type: "custom" } },
@@ -37,8 +39,8 @@ export class TheSidebarContentComponent implements OnInit{
 
 
 
-  private _mobileQueryListener: () => void;
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private activatedRoute : ActivatedRoute) {
+  private readonly _mobileQueryListener: () => void;
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private route : ActivatedRoute) {
 
     console.log(this.userId);
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
@@ -52,6 +54,19 @@ export class TheSidebarContentComponent implements OnInit{
 
   ngOnInit() {
 
+    console.log("hopa")
+    this.route.params.subscribe((params: { [key: string]: string }) => {
+      const role = params['role'];
+      console.log(role)
+      switch (role) {
+        case 'student':
+          this.userRole = "student";
+          break;
+        case 'teacher':
+          this.userRole = "teacher";
+          break;
+      }
+    });
   }
 
 }

@@ -43,7 +43,13 @@ export class HomeViewComponent implements OnInit{
     this.router.navigate(['/plans/:id']);
   }
   redirectToProgress() {
-    this.router.navigate(['my-progress/:id']);
+    this.router.navigate(['my-progress/:id']).then(success => {
+      if (success) {
+        console.log('Navigation succeeded');
+      } else {
+        console.log('Navigation failed');
+      }
+    })
   }
 
   ngOnInit() {

@@ -19,6 +19,7 @@ import {GameScreenComponent} from "./2squareD/components/game-screen/game-screen
 import {PlansViewComponent} from "./2squareD/components/plans-view/plans-view.component";
 import {GameOverviewComponent} from "./2squareD/components/game-overview/game-overview.component";
 
+
 export const routes: Routes = [
   { path: 'home/:id/:role', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
