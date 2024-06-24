@@ -1,24 +1,31 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar toolbar-home">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+  </mat-toolbar>
 
-  <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
-    <mat-toolbar color="primary" class="example-toolbar toolbar-home">
-      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-    </mat-toolbar>
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav class="sidenav-container" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <div class="side-profile">
+        <img class="side-img" src="assets/man-photo-profile.png" alt="sidebar profile">
+        <div class="side-user-info">
+          <span class="side-user-title">User</span>
+          <span class="side-user-rol">Estudiante</span>
+        </div>
+      </div>
 
-    <mat-sidenav-container class="example-sidenav-container"
-                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-      <mat-sidenav class="sidenav-container" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-        <mat-nav-list >
-          @for (nav of fillerNav; track nav) {
-            <a style="color: white" class="item-sidenav" mat-list-item [routerLink]="[nav.path,userId]">{{nav.name}} </a>
-          }
-        </mat-nav-list>
-      </mat-sidenav>
+        @for (nav of fillerNav; track nav){
+          <a style="color: white" class="item-sidenav" mat-list-item [routerLink]="[nav.path, userId]">
+              @if(nav.icon.type === 'custom'){
+                <img [src]="nav.icon.src" alt="{{nav.name}} icon" style="width: 25px; height: 25px; margin-top: 20px; margin-right: 20px">
+              }
+            {{ nav.name }}
+          </a>
+        }
+    </mat-sidenav>
 
-      <mat-sidenav-content>
-        <router-outlet/>
-        <app-the-footer-content></app-the-footer-content>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  </div>
-
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+      <app-the-footer-content></app-the-footer-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

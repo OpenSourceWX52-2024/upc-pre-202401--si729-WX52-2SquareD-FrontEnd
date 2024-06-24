@@ -26,7 +26,15 @@ export class TheSidebarContentComponent implements OnInit{
   userId:any="1";
 
 
-  fillerNav = [{name:"Inicio",path:"/home"}, {name:"Juegos",path:"/games"}, {name:"Progreso",path:"/my-progress"},{name:"Planes", path:"/plans"},{name:"Configuración",path:"/configuration"}];
+  fillerNav = [
+    { name: "Inicio", path: "/home", icon: { src: "assets/icons/home-button.png", type: "custom" } },
+    { name: "Juegos", path: "/games", icon: { src: "assets/icons/console.png", type: "custom" } },
+    { name: "Progreso", path: "/my-progress", icon: {src: "assets/icons/check.png", type: "custom" } },
+    { name: "Planes", path: "/plans", icon: { src: "assets/icons/money.png", type: "custom" } },
+    { name: "Configuración", path: "/configuration", icon: { src: "assets/icons/setting.png", type: "custom" } },
+    { name: "Salir", path: "/", icon: { src: "assets/icons/logout.png", type: "custom" } }
+  ];
+
 
 
   private _mobileQueryListener: () => void;
