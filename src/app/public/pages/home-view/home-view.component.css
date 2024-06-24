@@ -167,5 +167,11 @@ mat-card-content {
   font-weight: bold;
   padding: 20px 20px;
 }
+h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.5rem;
+  color: #19456C;
+  line-height: 55px;
+}
 
 
