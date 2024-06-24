@@ -31,7 +31,6 @@ readonly fillerNav = [
   {name:"Juegos",path:"/games"},
   {name:"Progreso",path:"/my-progress"},
   {name:"Planes", path:"/plans"},
-  {name:"Clases", path:"/my-clases"},
   {name:"Configuración",path:"/configuration"}
 ];
 

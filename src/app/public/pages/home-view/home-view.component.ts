@@ -49,7 +49,8 @@ export class HomeViewComponent implements OnInit{
   ngOnInit() {
     console.log("hopa")
     this.route.params.subscribe((params: {[key: string]: string}) => {
-    let role = params['role'];
+      const id = params['id'];
+      const role = params['role'];
     console.log(role)
       switch (role) {
       case 'student':

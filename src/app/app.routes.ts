@@ -18,19 +18,17 @@ import {UsersConfigurationComponent} from "./2squareD/components/users-configura
 import {GameScreenComponent} from "./2squareD/components/game-screen/game-screen.component";
 import {PlansViewComponent} from "./2squareD/components/plans-view/plans-view.component";
 import {GameOverviewComponent} from "./2squareD/components/game-overview/game-overview.component";
-import {UsersClassComponent} from "./2squareD/components/users-class/users-class.component";
 
 export const routes: Routes = [
-  { path: 'home/:role', component: HomeViewComponent },
+  { path: 'home/:id/:role', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
-  { path: 'my-progress/:id', component: UserProgressViewComponent},
+  { path: 'my-progress/:role', component: UserProgressViewComponent},
   { path: 'games/:id', component: MathGamesViewComponent},
   { path: 'configuration/:id', component: UsersConfigurationComponent},
   { path: 'game/screen/:id',component: GameScreenComponent},
   { path: 'plans/:id', component: PlansViewComponent},
   { path: 'game/overview/:id', component: GameOverviewComponent},
-  { path: 'my-class/:id', component: UsersClassComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
