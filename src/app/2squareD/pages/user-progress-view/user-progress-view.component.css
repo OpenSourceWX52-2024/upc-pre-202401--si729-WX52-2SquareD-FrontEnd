@@ -1,33 +1,12 @@
-.container-view-progress {
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  align-content: center;
-}
-
 .container-myprogress {
-  padding: 70px;
-  margin-left: 330px;
-  margin-right: 330px;
-  margin-bottom: 100px;
-  border: lightgray 1px solid;
-  box-shadow: lightgray 1px 4px 2px;
-  border-radius: 100px;
-  align-items: center;
-  background: linear-gradient(to bottom, #EDEDED 0%, #EDEDED 50%, #FFFFFF 100%);
+  padding: 80px;
 }
 
 .container-mygames {
-  padding-top: 30px;
   display: flex;
-  justify-content: center;
-  gap: 60px;
-  align-content: center;
-  border-radius: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 h1 {
   display: inline-block;
   font-family: 'Alfa Slab One', cursive;
@@ -38,51 +17,45 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-.container-myprogress h3 {
-  font-family: 'Alfa Slab One', cursive;
-  justify-items: center;
-  align-items: center;
+h3
+{
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 1vh;
 }
 
 .game {
-  text-align: center;
-  justify-items: center;
-}
-
-.uno {
-  height: 80px;
-  border-radius: 10%;
-}
-
-.dos {
-  height: 100px;
-  border-radius: 15%;
-}
-
-.tres {
-  border-radius: 10%;
-}
-
-.game h3 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #1B4972;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-}
-
-h4 {
-  font-family: 'Alfa Slab One', cursive;
+  flex: 1 1 calc(33% - 20px);
+  box-sizing: border-box;
+  margin: 10px;
   text-align: center;
 }
 
-.game img{
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.game img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 180px;
 }
 
-.game img:hover{
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  .game {
+    flex: 1 1 calc(50% - 20px);
+  }
+  h3
+  {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 
-
+@media (max-width: 480px) {
+  .game {
+    flex: 1 1 100%;
+  }
+  h3
+  {
+    font-size: 20px;
+  }
+}
