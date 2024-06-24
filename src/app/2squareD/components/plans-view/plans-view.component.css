@@ -1,8 +1,8 @@
 .rounded-box {
   border-radius: 50px;
   padding: 20px;
-  width: 1314px; /* Cambia a 100% para que ocupe todo el ancho disponible */
-  max-width: 1314px; /* Establece un ancho máximo para que no se haga demasiado grande en pantallas grandes */
+  width: 80%;
+  max-width: 1314px;
   height: 113px;
   text-align: center;
   line-height: 120px;
@@ -17,12 +17,12 @@
   background: linear-gradient(to right, #4fe28b, #3f9ee9);
 }
 
-/* Estilos específicos para pantallas pequeñas */
 @media (max-width: 600px) {
   .rounded-box {
-    font-size: 20px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-    height: 40px; /* Reduce la altura para pantallas pequeñas */
-    line-height: 40px; /* Ajusta la alineación vertical del texto */
+    font-size: 20px;
+    height: auto;
+    line-height: normal;
+    padding: 10px;
   }
 }
 
@@ -30,30 +30,22 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
-
-  flex-wrap: wrap; /* Añade esta línea si quieres que las tarjetas se envuelvan a la siguiente línea en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
-.card1 li, .card2 li {
-  text-align: left;
-}
-.card1 {
+.card1, .card2 {
   background: linear-gradient(to right, #fab244, #e6342e);
   border-radius: 10px;
   padding: 20px;
-  width: 557px;
-  height: 339px;
+  width: 80%;
+  max-width: 557px;
+  height: auto;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .card2 {
   background: linear-gradient(to right, #4ee18a, #3fa0e3);
-  border-radius: 10px;
-  padding: 20px;
-  width: 557px;
-  height: 339px;
-  text-align: center;
 }
 
 h2 {
@@ -64,15 +56,36 @@ h2 {
   margin-bottom: 40px;
 }
 
-li{
+@media (max-width: 768px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+li {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   color: white;
-
   margin: 20px;
 }
+
 .card ul {
   list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  li {
+    font-size: 18px;
+    margin: 10px;
+  }
 }
 
 button {
@@ -80,11 +93,21 @@ button {
   font-size: 32px;
   border: solid;
   border-radius: 20px;
-  background-color: transparent; /* Cambiado de #259cb6 a transparent */
+  background-color: transparent;
   color: white;
   cursor: pointer;
   font-family: 'Alfa Slab One', serif;
   margin: 40px;
-  width: 303px;
+  width: 100%;
+  max-width: 303px;
   height: 80px;
+}
+
+@media (max-width: 600px) {
+  button {
+    font-size: 20px;
+    width: 80%;
+    height: 60px;
+    margin: 20px;
+  }
 }

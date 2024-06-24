@@ -18,6 +18,15 @@
         <mat-label>Contraseña</mat-label>
         <input matInput type="password" [(ngModel)]="userData.password">
       </mat-form-field>
+      <mat-form-field>
+        <mat-label>Elige tu rol</mat-label>
+        <mat-select>
+          @for (rol of rols; track rol) {
+            <mat-option [value]="rol.value">{{rol.viewValue}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+
       <button mat-raised-button class="register" (click)="registerUser()">Registrarse</button>
       <a class="have-account" (click)="redirectToLogin()">Tengo cuenta</a>
     </div>

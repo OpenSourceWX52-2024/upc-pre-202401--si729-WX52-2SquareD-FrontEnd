@@ -1,12 +1,17 @@
 .rounded-box {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px solid #000;
   border-radius: 20px;
-  width: 1162px;
-  height: 717px;
-  background: #c8c8c8;
+  width: 100%;
+  max-width: 1162px;
+  height: auto;
+  min-height: 400px;
+  background: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .left-side, .right-side {
@@ -14,39 +19,78 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .left-side img {
   max-width: 100%;
   height: auto;
-  padding-left: 80px;
+  display: block;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
 }
+
 .register {
   background: linear-gradient(90deg, rgba(25,69,107,1) 0%, rgba(49,135,209,1) 100%);
   color: white !important;
   border-radius: 50px;
   padding: 10px;
-  width:  194px;
+  width: 100%;
+  max-width: 194px;
   height: 60px;
-  font-size:  20px;
+  font-size: 20px;
 }
-
 
 .have-account {
   color: #16C79A;
-  font-size:  20px;
+  font-size: 20px;
   margin-top: 10px;
   padding: 10px;
 }
 
-.have-account:hover
-{
+.have-account:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .rounded-box {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    padding: 10px;
+  }
+
+  .register {
+    width: 80%;
+  }
+
+  .have-account {
+    font-size: 18px;
+  }
+  .left-side img {
+    display:none;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-side img {
+  display:none;
+  }
+
+  .register {
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .have-account {
+    font-size: 16px;
+  }
 }
