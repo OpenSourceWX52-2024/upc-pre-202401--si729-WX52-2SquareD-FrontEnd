@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from "@angular/material/button";
 import {Router, RouterLink} from '@angular/router';
-
+import {ActivatedRoute} from '@angular/router';
 
 
 @Component({
@@ -13,7 +13,7 @@ import {Router, RouterLink} from '@angular/router';
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })
-export class HomeViewComponent {
+export class HomeViewComponent implements OnInit{
   items = [
     { src: 'assets/game-screen1.png' },
     { src: 'assets/game-screen1.png' },
@@ -21,9 +21,12 @@ export class HomeViewComponent {
     { src: 'assets/game-screen1.png' },
     { src: 'assets/game-screen1.png' },
   ];
+  text: string = '';
+  text1: string = '';
+  text2: string = '';
   currentIndex = 0;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private route: ActivatedRoute) {
   }
   prev() {
     if (this.currentIndex > 0) {
@@ -41,6 +44,26 @@ export class HomeViewComponent {
   }
   redirectToProgress() {
     this.router.navigate(['my-progress/:id']);
+  }
+
+  ngOnInit() {
+    console.log("hopa")
+    this.route.params.subscribe((params: {[key: string]: string}) => {
+    let role = params['role'];
+    console.log(role)
+      switch (role) {
+      case 'student':
+        this.text = '¡Mira cuanto has'
+        this.text1= 'mejorado desde que';
+        this.text2 = 'llegaste aquí!';
+        break;
+      case 'teacher':
+        this.text = '¡Mira cuanto han'
+        this.text1= 'mejorado tus estudiantes';
+        this.text2 = 'desde que llegaron aquí!';
+        break;
+      }
+    });
   }
 
 }
