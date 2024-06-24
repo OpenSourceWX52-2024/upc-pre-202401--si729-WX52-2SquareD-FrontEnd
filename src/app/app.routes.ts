@@ -15,13 +15,13 @@ import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-game
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 // @ts-ignore
 import {UsersConfigurationComponent} from "./2squareD/components/users-configuration/users-configuration.component";
-import {TheSidebarContentComponent} from "./public/components/the-sidebar-content/the-sidebar-content.component";
 import {GameScreenComponent} from "./2squareD/components/game-screen/game-screen.component";
 import {PlansViewComponent} from "./2squareD/components/plans-view/plans-view.component";
 import {GameOverviewComponent} from "./2squareD/components/game-overview/game-overview.component";
+import {UsersClassComponent} from "./2squareD/components/users-class/users-class.component";
 
 export const routes: Routes = [
-  { path: 'home/:id', component: HomeViewComponent },
+  { path: 'home/:role', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
   { path: 'my-progress/:id', component: UserProgressViewComponent},
@@ -30,6 +30,7 @@ export const routes: Routes = [
   { path: 'game/screen/:id',component: GameScreenComponent},
   { path: 'plans/:id', component: PlansViewComponent},
   { path: 'game/overview/:id', component: GameOverviewComponent},
+  { path: 'my-class/:id', component: UsersClassComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
