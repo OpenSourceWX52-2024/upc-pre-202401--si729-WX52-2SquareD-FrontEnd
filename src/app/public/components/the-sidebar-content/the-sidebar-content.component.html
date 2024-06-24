@@ -8,11 +8,11 @@
                            [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
       <mat-sidenav class="sidenav-container" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                    [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-        <mat-nav-list >
+        <a>
           @for (nav of fillerNav; track nav) {
             <a style="color: white" class="item-sidenav" mat-list-item [routerLink]="[nav.path,userId]">{{nav.name}} </a>
           }
-        </mat-nav-list>
+        </a>
       </mat-sidenav>
 
       <mat-sidenav-content>
