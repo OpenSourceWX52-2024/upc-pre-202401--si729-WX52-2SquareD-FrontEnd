@@ -155,6 +155,15 @@
       "teacher_id": 1,
       "game_id": 3,
       "state": "waiting"
+    },
+    {
+      "id": 9,
+      "title": "asd",
+      "password": "XD",
+      "capacity": "5",
+      "teacher_id": 1,
+      "game_id": 2,
+      "state": "waiting"
     }
   ]
 }

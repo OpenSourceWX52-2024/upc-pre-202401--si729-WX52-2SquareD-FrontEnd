@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+app-list-rooms {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 20px;
+  display: block;
+  background: linear-gradient(90deg, rgba(25,69,107,1) 0%, rgba(49,135,209,1) 100%);
+  color: white !important;
+  border-radius: 50px;
+  padding: 10px;
+  width: 194px;
+  height: 60px;
+  font-size: 20px;
+}

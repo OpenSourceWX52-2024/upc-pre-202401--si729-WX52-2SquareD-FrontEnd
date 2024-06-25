@@ -1,7 +1,8 @@
-.card-content{
+.card-content {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: space-around; /* Añade espacio alrededor de los elementos */
   text-align: center;
-    height: 100%;
+  height: 100%;
+  padding: 20px; /* Añade padding dentro de la tarjeta */
 }

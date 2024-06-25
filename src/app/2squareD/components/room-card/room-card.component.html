@@ -3,8 +3,8 @@
     <div class="card-content">
       <h2>{{ room?.title }}</h2>
       <h3>{{ game?.title }}</h3>
-      <p>participantes:<span>{{ participants.length }}/{{ room?.capacity }}</span></p>
-      <p>Estado:<span>{{ room?.state }}</span></p>
+      <p>participantes: <span>{{ participants.length }}/{{ room?.capacity }}</span></p>
+      <p>Estado: <span>{{ room?.state }}</span></p>
       @if (role === 'teacher'){
         <button mat-flat-button (click)="openDetailRoomDialog()">Ver mas</button>
       }

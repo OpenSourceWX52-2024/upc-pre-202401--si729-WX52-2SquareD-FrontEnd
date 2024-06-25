@@ -41,3 +41,4 @@ export const routes: Routes = [
   { path: 'login/:id/:role', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];
+
