@@ -22,10 +22,10 @@ import {GameOverviewComponent} from "./2squareD/components/game-overview/game-ov
 import {PasswordRecoveryComponent} from "./2squareD/components/password-recovery/password-recovery.component";
 
 export const routes: Routes = [
-  { path: 'home/:id', component: HomeViewComponent },
+  { path: 'home/:id/:role', component: HomeViewComponent },
   { path: 'login', component: UsersLoginComponent},
   { path: 'sign-in', component: UsersSignInComponent},
-  {path: 'password-recovery', component: PasswordRecoveryComponent},
+  { path: 'password-recovery', component: PasswordRecoveryComponent},
   { path: 'my-progress/:id/:role', component: UserProgressViewComponent},
   { path: 'games/:id/:role', component: MathGamesViewComponent},
   { path: 'configuration/:id/:role', component: UsersConfigurationComponent},

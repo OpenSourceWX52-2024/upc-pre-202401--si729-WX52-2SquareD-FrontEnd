@@ -3,17 +3,15 @@
     {
       "id": "1",
       "username": "teacher-one",
-      "firstName": "John",
-      "lastName": "Doe",
+      "fullname": "John luca",
       "email": "johndoe@example.com",
-      "password": "123456",
+      "password": "testingpassword",
       "role": "teacher"
     },
     {
       "id": "2",
       "username": "student-one",
-      "firstName": "Jane",
-      "lastName": "Doe",
+      "fullname": "Jane Doe",
       "email": "janedoe@example.com",
       "password": "12ne6",
       "role": "student"
@@ -94,7 +92,5 @@
       "total_score": "150"
     }
   ],
-  "rooms": [
-
-  ]
+  "rooms": []
 }
