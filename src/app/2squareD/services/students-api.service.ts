@@ -14,4 +14,7 @@ export class StudentsApiService extends BaseService<Student>{
     this.resourceEndpoint = '/students';
   }
 
+  getByUserId(userId: string) {
+    return this._http.get<Student>(`${this.resourcePath()}?user_id=${userId}`);
+  }
 }

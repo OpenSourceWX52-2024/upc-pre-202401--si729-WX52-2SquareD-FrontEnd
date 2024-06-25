@@ -1,1 +1,11 @@
-<p>detail-room-dialog works!</p>
+<h2>{{ room?.title }}</h2>
+<p>Capacidad:<span>{{users.length}}/{{ room?.capacity }}</span></p>
+<p>Juego:<span>{{ game?.title }}</span></p>
+<p>Estado:<span>{{ room?.state }}</span></p>
+<ul>
+  @for (user of users;track user){
+    <li>{{ user.fullname }}</li>
+  }
+</ul>
+<button (click)="changeGameState()">Cambiar estado de juego a "in game"</button>
+
