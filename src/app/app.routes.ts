@@ -9,7 +9,7 @@ import {UsersLoginComponent} from "./2squareD/components/users-login/users-login
 import {UsersSignInComponent} from "./2squareD/components/users-sign-in/users-sign-in.component";
 // @ts-ignore
 
-
+import {ReportViewComponent} from "./2squareD/components/report-view/report-view.component";
 import {MathGamesViewComponent} from "./2squareD/pages/math-games-view/math-games-view.component";
 // @ts-ignore
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
@@ -36,7 +36,8 @@ export const routes: Routes = [
   { path: 'plans/:id/:role', component: PlansViewComponent},
   { path: 'game/overview/:id/:role', component: GameOverviewComponent},
   {path: 'rooms/:id/:role', component: RoomsViewComponent},
+  {path: 'reports/:id/:role', component: ReportViewComponent},
   { path: '', redirectTo: 'login', pathMatch: 'full'},
-  { path: '1', redirectTo: 'login', pathMatch: 'full'},
+  { path: 'login/:id/:role', redirectTo: 'login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent }
 ];

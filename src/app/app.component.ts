@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         // @ts-ignore
-        this.showSidebar = event.url !== '/login' && event.url !== '/sign-in'&& event.url !== '/password-recovery' && event.url !== '/' && event.url !== '/1';
+        this.showSidebar = event.url !== '/login' && event.url !== '/sign-in' && event.url !== '/password-recovery' && event.url !== '/' && event.url !== '/login/:id/:role';
         if (this.showSidebar) {
           this.load=1;
         }else {
