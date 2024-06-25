@@ -5,24 +5,24 @@
 }
 
 .example-card {
-  width: 70%; /* Ajusta el ancho al 100% para que ocupe todo el espacio disponible */
-  height: auto; /* Ajusta la altura a auto para que se ajuste al contenido */
-  margin: 0 auto; /* Centra la tarjeta horizontalmente */
-  overflow: hidden; /* Evita que el contenido se salga de la tarjeta */
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ajusta esto a la altura del contenedor */
+  height: 100vh;
 }
 
 .avatar-config {
   background-size: cover;
-  height: 100px; /* Ajusta la altura a un valor fijo */
-  width: 100px ; /* Ajusta el ancho a un valor fijo */
-  border-radius: 50% ; /* Esto hace que la imagen sea circular */
+  height: 100px;
+  width: 100px ;
+  border-radius: 50% ;
 }
 
 .card-header {
@@ -62,38 +62,37 @@ mat-card-subtitle {
   color: #19456B !important;
 }
 
-/* Configuración del grid */
 mat-grid-list {
-  width: 100%; /* Ajusta el ancho del grid al 50% */
-  margin: 0 auto; /* Centra el grid horizontalmente */
+  width: 100%;
+  margin: 0 auto;
 }
 
 mat-grid-tile {
-  display: flex; /* Utiliza un diseño de flexbox */
-  flex-direction: column; /* Coloca los elementos en una columna */
-  align-items: start; /* Alinea los elementos al inicio */
-  padding: 10px; /* Ajusta el padding para crear separaciones entre los tiles */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
 }
 
 p, mat-form-field {
-  display: block; /* Hace que los elementos ocupen su propia línea */
+  display: block;
   margin-bottom: 10px;
-  color: #19456B !important;/* Añade un margen inferior a los elementos p */
+  color: #19456B !important;
 }
 hr {
   border: none;
-  border-top: 1px solid #ccc; /* Cambia el color según tus necesidades */
-  margin: 10px 0; /* Ajusta el margen según tus necesidades */
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
 }
 
 label {
-  display: block; /* Hace que el label ocupe su propia línea */
-  margin: 10px 0; /* Añade un margen alrededor del label */
+  display: block;
+  margin: 10px 0;
 
 }
 .separation-line {
   border: none;
-  border-top: 1px solid #000; /* Cambia el color según tus necesidades */
+  border-top: 1px solid #000;
   margin: 0;
 }
 .center-content {

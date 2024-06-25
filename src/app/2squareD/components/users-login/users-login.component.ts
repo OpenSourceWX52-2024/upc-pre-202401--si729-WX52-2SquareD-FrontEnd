@@ -39,6 +39,10 @@ export class UsersLoginComponent implements OnInit {
 
   }
 
+  redirectToPasswordRecovery() {
+    this.router.navigate(['/password-recovery']);
+  }
+
   redirectToSignin() {
     this.router.navigate(['/sign-in']);
   }
