@@ -1,10 +1,10 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+<div class="example-container">
   <mat-toolbar color="primary" class="example-toolbar toolbar-home">
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav class="sidenav-container" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav class="sidenav-container" #snav>
       <div class="side-profile">
         <img class="side-img" src="assets/man-photo-profile.png" alt="sidebar profile">
         <div class="side-user-info">
@@ -14,7 +14,7 @@
       </div>
 
         @for (nav of fillerNav; track nav){
-          <a style="color: white" class="item-sidenav" mat-list-item [routerLink]="[nav.path, userId]">
+          <a style="color: white" class="item-sidenav" mat-list-item [routerLink]="[nav.path, userId, userRole]">
               @if(nav.icon.type === 'custom'){
                 <img [src]="nav.icon.src" alt="{{nav.name}} icon" style="width: 25px; height: 25px; margin-top: 20px; margin-right: 20px">
               }

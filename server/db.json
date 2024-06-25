@@ -6,7 +6,8 @@
       "firstName": "John",
       "lastName": "Doe",
       "email": "johndoe@example.com",
-      "password": "123456"
+      "password": "123456",
+      "role": "teacher"
     },
     {
       "id": "2",
@@ -14,76 +15,32 @@
       "firstName": "Jane",
       "lastName": "Doe",
       "email": "janedoe@example.com",
-      "password": "12ne6"
+      "password": "12ne6",
+      "role": "student"
     },
     {
       "id": "3",
-      "username": "teacher-two",
-      "firstName": "Jim",
-      "lastName": "Beam",
-      "email": "jimbeam@example.com",
-      "password": "12Jim56"
+      "username": "Miguel",
+      "fullname": "Joe Jota",
+      "email": "asdasd@gmail.com",
+      "password": "miguel123",
+      "role": "student"
     },
     {
       "id": "4",
-      "username": "student-two",
-      "firstName": "Janet",
-      "lastName": "Jackson",
-      "email": "janetjackson@example.com",
-      "password": "1Janet56"
+      "username": "kanariandev",
+      "fullname": "Miguel",
+      "email": "asdasd@gmail.com",
+      "password": "miguel123",
+      "role": "teacher"
     },
     {
       "id": "5",
-      "username": "teacher-three",
-      "firstName": "Luck",
-      "lastName": "Bream",
-      "email": "luckbream@example.com",
-      "password": "12Luck6"
-    },
-    {
-      "id": "6",
-      "username": "student-three",
-      "firstName": "Karl",
-      "lastName": "Dean",
-      "email": "karldean@example.com",
-      "password": "1Dean456"
-    },
-    {
-      "id": "0",
-      "username": "miguel",
-      "firstName": "Joe",
-      "lastName": "Jota",
-      "email": "asdasd@gmail.com",
-      "password": "miguel123"
-    },
-    {
-      "id": "8",
-      "username": "angel",
-      "firstName": "Joe",
-      "lastName": "Jota",
-      "email": "dsd@gmail.com",
-      "password": "miguel123"
-    },
-    {
-      "id": "9",
       "username": "asd",
-      "firstName": "Joe",
-      "lastName": "Jota",
-      "email": "asd",
-      "password": "asd"
-    },
-    {
-      "id": "10",
-      "firstName": "Joe",
-      "lastName": "Jota"
-    },
-    {
-      "id": "11",
-      "username": "asd",
-      "firstName": "Joe",
-      "lastName": "Jota",
-      "email": "asd",
-      "password": "asd"
+      "fullname": "asdasdas",
+      "email": "asdasdasd@gmail.com",
+      "password": "qweqwasdas",
+      "role": "student"
     }
   ],
   "students": [
@@ -117,89 +74,24 @@
   "games": [
     {
       "id": "1",
-      "studentsIds": [
-        1,
-        2
-      ],
-      "tagsIds": [
-        1,
-        3
-      ],
+      "tag": "Algebra",
       "name": "Calculo Mental",
-      "description": "¡Bienvenido a 'Calculo Mental'! El juego donde sumar, restar, multiplicar y dividir nunca ha sido tan emocionante. Únete a nuestros intrépidos personajes en su misión por resolver problemas matemáticos en tiempo récord y salvar la tierra de los errores aritméticos. ¡Demuestra que eres el maestro del cálculo y diviértete mientras desafías tu mente con desafíos numéricos! Calculatopia: donde hasta las ecuaciones más complejas se convierten en diversión desenfrenada."
+      "description": "¡Bienvenido a 'Calculo Mental'! El juego donde sumar, restar, multiplicar y dividir nunca ha sido tan emocionante. Únete a nuestros intrépidos personajes en su misión por resolver problemas matemáticos en tiempo récord y salvar la tierra de los errores aritméticos. ¡Demuestra que eres el maestro del cálculo y diviértete mientras desafías tu mente con desafíos numéricos! Calculatopia: donde hasta las ecuaciones más complejas se convierten en diversión desenfrenada.",
+      "total_score": "100"
     },
     {
       "id": "2",
-      "studentsIds": [
-        2,
-        3
-      ],
-      "tagsIds": [
-        1,
-        2
-      ],
+      "tag": "Arithmetic",
       "name": "FracPizza",
-      "description": "¡Bienvenido a 'FracPizza', el juego donde puedes aprender sobre fracciones de una manera deliciosa. Únete a nuestro chef pizzero en la cocina y aprende a dividir pizzas en fracciones mientras preparas las pizzas más deliciosas. Desde medias pizzas hasta octavos, este juego te enseñará todo sobre fracciones de una manera divertida y sabrosa. ¡Prepárate para una experiencia de aprendizaje que te dejará con ganas de más!"
+      "description": "¡Bienvenido a 'FracPizza', el juego donde puedes aprender sobre fracciones de una manera deliciosa. Únete a nuestro chef pizzero en la cocina y aprende a dividir pizzas en fracciones mientras preparas las pizzas más deliciosas. Desde medias pizzas hasta octavos, este juego te enseñará todo sobre fracciones de una manera divertida y sabrosa. ¡Prepárate para una experiencia de aprendizaje que te dejará con ganas de más!",
+      "total_score": "200"
     },
     {
       "id": "3",
-      "studentsIds": [
-        1,
-        3
-      ],
-      "tagsIds": [
-        2,
-        3
-      ],
+      "tag": "Geometry",
       "name": "Versusmatic",
-      "description": "¡Bienvenido a 'Versusmatic', donde los números se convierten en poderosos aliados en batallas épicas! En este emocionante juego multijugador, podrás entrenar a tus MathMons, criaturas mágicas que representan diferentes conceptos matemáticos, como sumas, restas, multiplicaciones y divisiones. Desafía a otros jugadores a duelos donde el conocimiento matemático y la estrategia son clave para la victoria. ¡Conviértete en el Maestro MathMon y demuestra que eres el mejor en batallas donde la mente es tu mayor arma!"
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "gameId": 2,
-      "name": "Aritmética"
-    },
-    {
-      "id": "2",
-      "gameId": 3,
-      "name": "Algebra"
-    },
-    {
-      "id": "3",
-      "gameId": 1,
-      "name": "Geometría"
-    }
-  ],
-  "tags": [
-    {
-      "id": "1",
-      "name": "Fractions"
-    },
-    {
-      "id": "2",
-      "name": "Free"
-    },
-    {
-      "id": "3",
-      "name": "Singleplayer"
-    }
-  ],
-  "gameProgress": [
-    {
-      "id": "1",
-      "studentId": 2,
-      "gameId": 1,
-      "progress": "50%",
-      "lastPlayed": "2024-05-12"
-    },
-    {
-      "id": "2",
-      "studentId": 1,
-      "gameId": 2,
-      "progress": "75%",
-      "lastPlayed": "2023-05-06"
+      "description": "¡Bienvenido a 'Versusmatic', donde los números se convierten en poderosos aliados en batallas épicas! En este emocionante juego multijugador, podrás entrenar a tus MathMons, criaturas mágicas que representan diferentes conceptos matemáticos, como sumas, restas, multiplicaciones y divisiones. Desafía a otros jugadores a duelos donde el conocimiento matemático y la estrategia son clave para la victoria. ¡Conviértete en el Maestro MathMon y demuestra que eres el mejor en batallas donde la mente es tu mayor arma!",
+      "total_score": "150"
     }
   ]
 }

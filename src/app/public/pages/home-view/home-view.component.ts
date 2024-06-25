@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import {MatButtonModule} from "@angular/material/button";
 import {Router, RouterLink} from '@angular/router';
 import {ActivatedRoute} from '@angular/router';
+import {UserSharedService} from "../../../2squareD/services/user-shared.service";
 
 
 @Component({
@@ -26,7 +27,7 @@ export class HomeViewComponent implements OnInit{
   text2: string = '';
   currentIndex = 0;
 
-  constructor(private router: Router, private route: ActivatedRoute) {
+  constructor(private router: Router, private route: ActivatedRoute, private userService: UserSharedService) {
   }
   prev() {
     if (this.currentIndex > 0) {
@@ -53,11 +54,15 @@ export class HomeViewComponent implements OnInit{
   }
 
   ngOnInit() {
-    console.log("hopa")
+    console.log("home")
     this.route.params.subscribe((params: {[key: string]: string}) => {
       const id = params['id'];
       const role = params['role'];
-    console.log(role)
+
+      this.userService.setId(id);
+      this.userService.setRole(role);
+      console.log(id)
+      console.log(role)
       switch (role) {
       case 'student':
         this.text = '¡Mira cuanto has'
