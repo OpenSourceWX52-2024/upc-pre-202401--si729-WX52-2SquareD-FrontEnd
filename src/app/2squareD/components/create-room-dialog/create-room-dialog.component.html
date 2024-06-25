@@ -1,0 +1,27 @@
+<div class="create-room-dialog">
+  <h2>Crear sala</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="Nombre de la sala" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Contraseña" formControlName="password">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Juego</mat-label>
+      <mat-select placeholder="Juego" formControlName="game">
+        @for (game of games; track game){
+          <mat-option [value]="game.id">{{ game.title }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Capacidad" formControlName="capacity">
+    </mat-form-field>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

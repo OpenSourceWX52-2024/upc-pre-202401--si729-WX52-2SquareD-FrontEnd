@@ -1,0 +1,8 @@
+
+<div class="list-rooms">
+  <div class="card-container flex-container">
+    @for (room of rooms; track room){
+      <app-room-card [roomId]="room.id"></app-room-card>
+    }
+  </div>
+</div>

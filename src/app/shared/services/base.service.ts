@@ -14,9 +14,9 @@ export class BaseService<T> {
     ),
   };
 
-  constructor(private _http: HttpClient) {}
+  constructor(protected _http: HttpClient) {}
 
-  private resourcePath() {
+  protected resourcePath() {
     return `${this.basePath}${this.resourceEndpoint}`
   }
 

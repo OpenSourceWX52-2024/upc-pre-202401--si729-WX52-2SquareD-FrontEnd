@@ -1,0 +1,11 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+app-room-card {
+  flex: 1 0 21%; /* This will make the cards take up 21% of the container's width, and they will wrap onto a new line if there isn't enough space. Adjust this value as needed. */
+  margin: 10px; /* Add some margin around the cards */
+  max-width: 300px; /* Set a max-width for the cards */
+}

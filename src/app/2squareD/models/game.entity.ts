@@ -1,15 +1,14 @@
 export class Game {
   id: number;
-  studentsIds: number[];
-  tagsIds: number[];
-  name: string;
+  title: string;
   description: string;
-
-  constructor(id: number, studentsIds: number[], tagsIds: number[], name: string, description: string) {
+  tag: string;
+  total_score: number;
+  constructor(id: number, title: string, description: string, tag: string, total_score: number) {
     this.id = id;
-    this.studentsIds = studentsIds;
-    this.tagsIds = tagsIds;
-    this.name = name;
+    this.title = title;
     this.description = description;
+    this.tag = tag;
+    this.total_score = total_score;
   }
 }
