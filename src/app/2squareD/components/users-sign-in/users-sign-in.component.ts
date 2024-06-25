@@ -7,6 +7,10 @@ import {User} from "../../models/user.entity";
 import { Router } from '@angular/router';
 import {FormsModule} from "@angular/forms";
 import {MatOption, MatSelectModule} from "@angular/material/select";
+import {Student} from "../../models/student.entity";
+import {Teacher} from "../../models/teacher.entity";
+import {StudentsApiService} from "../../services/students-api.service";
+import {TeachersApiService} from "../../services/teachers-api.service";
 
 interface Rol {
   value: string;
@@ -35,7 +39,7 @@ interface Rol {
 export class UsersSignInComponent {
 
   userData: User={
-    id:"",
+    id:0,
     username:"",
     fullname:"",
     email:"",
@@ -43,8 +47,11 @@ export class UsersSignInComponent {
     role:""
   };
   selectedRole!: string;
-  newId:string=""
-  constructor(private router: Router,private usersService: UsersApiService) {
+  newId:number=0
+  constructor(private router: Router,
+              private usersService: UsersApiService,
+              private studentsService: StudentsApiService,
+              private teachersService: TeachersApiService) {
     this.userData = {} as User;
   }
 
@@ -58,10 +65,9 @@ export class UsersSignInComponent {
   }
 
   registerUser() {
-    this.newId="0"
+    this.newId=0
     this.usersService.getAll().subscribe((response:User[]) => {
       console.log(response.length +1);
-      this.newId = (response.length +1).toString();
       console.log(this.newId)
       const newUser = new User(this.newId, this.userData.username, this.userData.fullname, this.userData.email, this.userData.password, this.selectedRole);
 
@@ -72,7 +78,18 @@ export class UsersSignInComponent {
   private createUser(user: User) {
     this.usersService.post(user).subscribe((response: any) => {
       console.log(response);
-      this.redirectToLogin()
-      });
-  };
+      if (this.selectedRole === 'student') {
+        const newStudent = new Student(this.newId, response.id);
+        this.studentsService.post(newStudent).subscribe((response: any) => {
+          console.log('New student:', response);
+        });
+      } else if (this.selectedRole === 'teacher') {
+        const newTeacher = new Teacher(this.newId, response.id);
+        this.teachersService.post(newTeacher).subscribe((response: any) => {
+          console.log('New teacher:', response);
+        });
+      }
+      this.redirectToLogin();
+    });
+  }
 }

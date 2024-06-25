@@ -7,6 +7,10 @@ import {GamesApiService} from "../../services/games-api.service";
 import {Game} from "../../models/game.entity";
 import {Participant} from "../../models/participant.entity";
 import {ParticipantsService} from "../../services/participants.service";
+import {DetailRoomDialogComponent} from "../detail-room-dialog/detail-room-dialog.component";
+import {MatDialog} from "@angular/material/dialog";
+import {ActivatedRoute} from "@angular/router";
+import {StudentsApiService} from "../../services/students-api.service";
 
 @Component({
   selector: 'app-room-card',
@@ -17,17 +21,42 @@ import {ParticipantsService} from "../../services/participants.service";
 })
 export class RoomCardComponent implements OnInit{
   @Input() roomId!: string;
+  @Input() role!: string;
   room!: Room;
   game!: Game;
   participants: Participant[] = [];
   constructor(private roomsService: RoomsService,
               private gamesApiService: GamesApiService,
-              private participantsService: ParticipantsService) {
+              private participantsService: ParticipantsService,
+              private studentsService: StudentsApiService,
+              public dialog: MatDialog,
+              private route: ActivatedRoute) {
   }
+
   ngOnInit() {
     this.loadRoomAndGame();
     this.getParticipantsByRoomId();
   }
+
+  joinRoom() {
+    const userId = this.route.snapshot.paramMap.get('id');
+    if (userId) {
+      this.studentsService.getByUserId(userId).subscribe(response => {
+        // @ts-ignore
+        const student = response[0]; // If the response is an array, get the first element
+        console.log('student:', student);
+        if (student) {
+          const participant = new Participant(0, student.id, this.room.id);
+          console.log('participant:', participant);
+          this.participantsService.post(participant).subscribe(newParticipant => {
+            console.log('New participant:', newParticipant);
+            this.participants.push(newParticipant);
+          });
+        }
+      });
+    }
+  }
+
   getParticipantsByRoomId() {
     if (this.roomId) {
       this.participantsService.getParticipantsByRoomId(this.roomId).subscribe(participants => {
@@ -49,5 +78,13 @@ export class RoomCardComponent implements OnInit{
       });
     }
   }
+  openDetailRoomDialog() {
+    const dialogRef = this.dialog.open(DetailRoomDialogComponent, {
+      data: { room: this.room, game: this.game, participants: this.participants }
+    });
 
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 }
