@@ -51,7 +51,7 @@ export class UsersLoginComponent implements OnInit {
     const user = this.users.find(user => user.email === this.email);
     if (user) {
       if (user.password === this.password) {
-        this.router.navigate(['/home',user.id]);
+        this.router.navigate(['/home',user.id,user.role]);
       } else {
         this.errorMessage = 'Contraseña incorrecta';
       }

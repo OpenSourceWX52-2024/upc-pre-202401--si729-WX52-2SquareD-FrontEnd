@@ -1,9 +1,11 @@
 <div class="container-view-progress"></div>
 <div class="container-myprogress">
-  <h1>Mi progreso</h1>
-  <h3>Eficiencia 40%</h3>
+  <p>userRole:{{userRole}}</p>
+  <h1 *ngIf="userRole==='student'">Mi progreso</h1>
+  <h1 *ngIf="userRole==='teacher'">Mis clases</h1>
+  <h3 *ngIf="userRole==='student'">Eficiencia 40%</h3>
   <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-  <div class="container-mygames">
+  <div class="container-mygames" *ngIf="userRole==='student'">
     <div class="game">
       <h3>FracPizza</h3>
       <img class="uno" src="assets/game-1-original.png" alt="fracpizza game" (click)="redirectToMathGamePizza()">

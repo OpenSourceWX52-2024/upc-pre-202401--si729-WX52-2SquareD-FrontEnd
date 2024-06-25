@@ -40,15 +40,17 @@ export class UsersSignInComponent {
     fullname:"",
     email:"",
     password:"",
+    role:""
   };
+  selectedRole!: string;
   newId:string=""
   constructor(private router: Router,private usersService: UsersApiService) {
     this.userData = {} as User;
   }
 
   rols: Rol[] = [
-    {value: 'Estudiante', viewValue: 'Estudiante'},
-    {value: 'Profesor', viewValue: 'Profesor'}
+    {value: 'student', viewValue: 'Estudiante'},
+    {value: 'teacher', viewValue: 'Profesor'}
   ];
 
   redirectToLogin() {
@@ -61,7 +63,7 @@ export class UsersSignInComponent {
       console.log(response.length +1);
       this.newId = (response.length +1).toString();
       console.log(this.newId)
-      const newUser = new User(this.newId, this.userData.username, "Joe Jota", this.userData.email, this.userData.password);
+      const newUser = new User(this.newId, this.userData.username, this.userData.fullname, this.userData.email, this.userData.password, this.selectedRole);
 
       this.createUser(newUser);
     })
