@@ -26,6 +26,8 @@ export class AppComponent implements OnInit{
         this.showSidebar = event.url !== '/login' && event.url !== '/sign-in' && event.url !== '/';
         if (this.showSidebar) {
           this.load=1;
+        }else {
+          this.load=0;
         }
       }
     });

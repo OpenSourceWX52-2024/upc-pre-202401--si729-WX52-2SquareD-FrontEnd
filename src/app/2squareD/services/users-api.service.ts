@@ -11,7 +11,7 @@ export class UsersApiService extends BaseService<User>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEndpoint = '/profiles';
+    this.resourceEndpoint = '/users';
   }
 
 }

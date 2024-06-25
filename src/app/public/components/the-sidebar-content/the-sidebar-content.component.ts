@@ -23,7 +23,7 @@ import {TheFooterContentComponent} from "../the-footer-content/the-footer-conten
 export class TheSidebarContentComponent implements OnInit{
 
   mobileQuery: MediaQueryList;
-  userRole: string = 'Student';
+  userRole: string = '';
 
   userId:any="1";
 
