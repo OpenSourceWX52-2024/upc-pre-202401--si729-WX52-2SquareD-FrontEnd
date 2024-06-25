@@ -31,12 +31,24 @@
       "email": "lucio@gmail.com",
       "password": "miguel123",
       "role": "student"
+    },
+    {
+      "id": 6,
+      "username": "gerardo01",
+      "fullname": "Gerardo Quilla",
+      "email": "gerardo@gmail.com",
+      "password": "12345678",
+      "role": "student"
     }
   ],
   "students": [
     {
       "id": 1,
       "user_id": 5
+    },
+    {
+      "id": 2,
+      "user_id": 6
     }
   ],
   "teachers": [
@@ -80,6 +92,11 @@
     {
       "id": 1,
       "student_id": 1,
+      "room_id": 6
+    },
+    {
+      "id": 2,
+      "student_id": 2,
       "room_id": 6
     }
   ],
@@ -136,7 +153,7 @@
       "capacity": "5",
       "teacher_id": 1,
       "game_id": 1,
-      "state": "waiting"
+      "state": "in game"
     },
     {
       "id": 7,
