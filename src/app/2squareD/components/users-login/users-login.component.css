@@ -40,7 +40,7 @@
 .forgot-password {
   margin-top: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .forgot-password:hover {
@@ -50,7 +50,7 @@
 
 .create-account {
   color: #16C79A;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .create-account:hover {
@@ -90,7 +90,7 @@
   }
 
   .forgot-password, .create-account {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
