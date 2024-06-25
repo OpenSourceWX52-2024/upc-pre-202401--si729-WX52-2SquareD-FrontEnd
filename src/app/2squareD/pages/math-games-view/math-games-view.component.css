@@ -1,179 +1,250 @@
-  .container-games {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    justify-content: center;
-    gap: 10px;
-    align-content: center;
-    align-items: center;
-    border-radius: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+.container-games {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
-  h1 {
-    display: inline-block;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 40px;
-    padding-bottom: 5px;
-    background: -webkit-linear-gradient(0deg, #19466C, #07817E, #3EE9BE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h1 {
+  display: inline-block;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 40px;
+  padding-bottom: 5px;
+  background: -webkit-linear-gradient(0deg, #19466C, #07817E, #3EE9BE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  width: 550px;
+  gap: 25px;
+  border: lightgray 1px solid;
+  box-shadow: lightgray 1px 3px 2px;
+}
+
+.uno {
+  border-radius: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+}
+
+.dos {
+  border-radius: 15%;
+  padding-left: 15px;
+}
+
+.tres {
+  border-radius: 10%;
+}
+
+.game h3 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #1B4972;
+  font-size: 40px;
+  cursor: pointer;
+  line-height: 40px;
+}
+
+.game img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.game-info1 {
+  padding-top: 55px;
+}
+
+.game-info2 {
+  padding-top: 30px;
+}
+
+.game-info3 {
+  justify-items: center;
+  padding-top: 50px;
+}
+
+.game-info2 h3 {
+  padding-left: 20px;
+}
+
+.game-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-tags button {
+  font-family: "Averia Serif Libre", serif;
+  font-size: 10px;
+  width: 90px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.subject-btn1 {
+  background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.mode-btn1 {
+  background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.type-btn1 {
+  background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.subject-btn2 {
+  background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.mode-btn2 {
+  background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.type-btn2 {
+  background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.subject-btn3 {
+  background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.mode-btn3 {
+  background: linear-gradient(to bottom, #FF3232 0%, #E14545 50%, #FDA6A6 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.type-btn3 {
+  background: linear-gradient(to bottom, #19456B 0%, #24649C 50%, #3187D1 100%);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+/* Estilos para pantallas con un ancho máximo de 800px (por ejemplo, tablets) */
+@media (max-width: 800px) {
+  .container-games {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .game {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    border-radius: 30px;
-    padding: 10px;
-    width: 550px;
-    gap: 25px;
-    border: lightgray 1px solid;
-    box-shadow: lightgray 1px 3px 2px;
-  }
-
-  .uno {
-    border-radius: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 2%;
-  }
-
-  .dos {
-    border-radius: 15%;
-    padding-left: 15px;
-  }
-
-  .tres {
-    border-radius: 10%;
+    width: 100%;
+    gap: 15px;
   }
 
   .game h3 {
-    font-family: 'Alfa Slab One', cursive;
-    color: #1B4972;
-    font-size: 40px;
-    cursor: pointer;
-    line-height: 40px;
+    font-size: 30px;
   }
-
-  .game img{
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
- /* .game img:hover{
-    transform: scale(1.1);
-  }*/
-
-  .game-info1 {
-    padding-top: 55px;
-  }
-  .game-info2 {
-    padding-top: 30px;
-  }
-  .game-info3{
-    justify-items: center;
-
-    padding-top: 50px;
-  }
-
-  .game-info2 h3{
-    padding-left: 20px;
-  }
-
-  .game-tags{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .game-tags button{
-    font-family: "Averia Serif Libre", serif;
-    font-size: 10px;
-    width: 90px;
-    height: 20px;
-    border-radius: 20px;
-  }
-
-  .subject-btn1{
-    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .mode-btn1{
-    background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .type-btn1{
-    background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .subject-btn2{
-    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .mode-btn2{
-    background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .type-btn2{
-    background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .subject-btn3{
-    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .mode-btn3{
-    background: linear-gradient(to bottom, #FF3232 0%, #E14545 50%, #FDA6A6 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
-  .type-btn3{
-    background: linear-gradient(to bottom, #19456B 0%, #24649C 50%, #3187D1 100%);
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-
+}
 
 /* Estilos para pantallas con un ancho máximo de 600px (por ejemplo, dispositivos móviles) */
 @media (max-width: 600px) {
   .container-games {
-    width: 10%; /* Ajusta el ancho al 100% de la pantalla */
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
-    gap: 10px; /* Ajusta el espacio entre los elementos */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .game {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .game h3 {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .game img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .game-tags button {
+    font-size: 8px;
+    width: 70px;
+    height: 18px;
+  }
+
+  .subject-btn1, .mode-btn1, .type-btn1,
+  .subject-btn2, .mode-btn2, .type-btn2,
+  .subject-btn3, .mode-btn3, .type-btn3 {
+    font-size: 8px;
+    padding: 2px;
   }
 }
 
-/* Estilos para pantallas con un ancho máximo de 900px (por ejemplo, tablets) */
-@media (max-width: 800px) {
+/* Estilos para pantallas con un ancho máximo de 410px (por ejemplo, dispositivos móviles pequeños) */
+@media (max-width: 410px) {
   .container-games {
-    width: 80%; /* Ajusta el ancho al 80% de la pantalla */
-    flex-direction: column; /* Mantiene la dirección de los elementos en fila */
-    gap: 20px; /* Ajusta el espacio entre los elementos */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .game {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .game h3 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .game img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .game-tags button {
+    font-size: 6px;
+    width: 60px;
+    height: 16px;
+  }
+
+  .subject-btn1, .mode-btn1, .type-btn1,
+  .subject-btn2, .mode-btn2, .type-btn2,
+  .subject-btn3, .mode-btn3, .type-btn3 {
+    font-size: 6px;
+    padding: 1px;
   }
 }

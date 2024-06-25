@@ -39,7 +39,7 @@
 }
 
 mat-card-subtitle {
-  margin-top: 20px; /
+  margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'Alfa Slab One', cursive;
   font-size: 30px;
@@ -55,13 +55,14 @@ mat-card-content {
 
 .play-button {
   display: block;
-  margin: auto;
+  margin-right: 90px;
   font-size: 20px;
   border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
   clear: both; /* Esto asegura que el botón se posiciona debajo de cualquier elemento flotante anterior */
   background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
   color: white;
   width: 100px;
+  justify-content: left;
 }
 
 .game-content {
@@ -171,4 +172,222 @@ mat-card-content {
     height: auto;
     margin-bottom: 20px; /* Añade margen inferior para separar la imagen del contenido */
   }
+
+  .info-card {
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    width: 100%; /* Cambia el ancho a 100% para que ocupe todo el ancho disponible */
+    max-width: 700px; /* Establece un ancho máximo para que no se haga demasiado grande en pantallas grandes */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: lightgray 1px 3px 2px;
+  }
+
+  .info-card mat-card-header {
+    padding-top: 35px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-card mat-card-header mat-card-title {
+    order: 1;
+  }
+
+  .info-card mat-card-header .game-tags {
+    order: 2;
+    padding-bottom: 20px;
+    justify-content: start;
+  }
+
+  .game-description {
+    order: 3;
+  }
+
+  .info-card mat-card-title h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #1B4972;
+  }
+
+  mat-card-subtitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    color: black;
+  }
+
+  mat-card-content {
+    margin-top: 5px; /* Ajusta este valor para cambiar el espacio encima de la descripción */
+    font-size: 20px;
+    font-family: 'Averia Serif Libre', sans-serif;
+    padding-left: 35px;
+  }
+
+  .play-button {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 20px; /* Ajusta este valor para cambiar cuánto se redondean las esquinas */
+    clear: both; /* Esto asegura que el botón se posiciona debajo de cualquier elemento flotante anterior */
+    background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
+    color: white;
+    width: 100px;
+  }
+
+  .game-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    padding-left: 450px;
+    width: 100%;
+    max-width: 700px; /* Establece un ancho máximo para la sección del contenido del juego */
+    height: auto;
+  }
+
+  .centered-image {
+    width: 100%;
+    max-width: 460px; /* Establece un ancho máximo para la imagen */
+    height: auto;
+  }
+
+  .game-card {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .game-card button {
+    font-family: "Averia Serif Libre", serif;
+    font-size: 25px;
+    width: 100%;
+    max-width: 150px; /* Establece un ancho máximo para los botones */
+    height: 50px;
+    margin-left: 300px;
+  }
+
+  .game-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+  }
+
+  .uno {
+    background: linear-gradient(to bottom, #16C79A 0%, #2AD8AB 50%, #3EE9BE 100%);
+    color: white !important;
+    border: none;
+    font-family: "Averia Serif Libre", serif;
+    width: 100%;
+    max-width: 100px; /* Establece un ancho máximo para los botones */
+    text-align: center;
+    border-radius: 20px;
+    align-content: center;
+  }
+
+  .dos {
+    background: linear-gradient(to bottom, #FFAF37 0%, #FBB854 50%, #FFD494 100%);
+    color: white !important;
+    border: none;
+    font-family: "Averia Serif Libre", serif;
+    width: 100%;
+    max-width: 100px; /* Establece un ancho máximo para los botones */
+    height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    align-content: center;
+  }
+
+  .tres {
+    background: linear-gradient(to bottom, #FF3232 0%, #F65E1E 50%, #EB9008 100%);
+    color: white !important;
+    border: none;
+    font-family: "Averia Serif Libre", serif;
+    width: 100%;
+    max-width: 110px; /* Establece un ancho máximo para los botones */
+    text-align: center;
+    border-radius: 20px;
+    align-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .info-card {
+      float: none;
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .info-card mat-card-title h1 {
+      font-size: 20px;
+    }
+
+    .game-content {
+      flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+      padding-left: 0;
+      width: 100%;
+    }
+
+    .game-card button {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    .centered-image {
+      width: 100%; /* Ancho completo para la imagen en pantallas pequeñas */
+      height: auto;
+      margin-bottom: 20px; /* Añade margen inferior para separar la imagen del contenido */
+    }
+  }
+
+  @media (max-width: 410px) {
+    .info-card {
+      padding-right: 10px; /* Ajusta el padding para pantallas más pequeñas */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .info-card mat-card-title h1 {
+      font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+
+    .game-content {
+      padding-left: 0;
+      gap: 20px; /* Reducir el espacio entre elementos */
+    }
+
+    .game-card button {
+      font-size: 18px; /* Tamaño de fuente más pequeño para los botones */
+      max-width: 120px; /* Ajuste del ancho máximo para pantallas más pequeñas */
+      margin-top: 10px;
+    }
+
+    .centered-image {
+      max-width: 300px; /* Reducir el ancho máximo para pantallas pequeñas */
+    }
+
+    .play-button {
+      width: 80px; /* Reducir el ancho del botón para pantallas pequeñas */
+      font-size: 16px; /* Tamaño de fuente más pequeño para el botón */
+    }
+
+    .uno, .dos, .tres {
+      max-width: 80px; /* Ajuste del ancho máximo para botones en pantallas pequeñas */
+      font-size: 14px; /* Tamaño de fuente más pequeño para los botones */
+    }
+
+    .game-tags {
+      gap: 5px;
+      display:flex;
+    }
+  }
+
 }

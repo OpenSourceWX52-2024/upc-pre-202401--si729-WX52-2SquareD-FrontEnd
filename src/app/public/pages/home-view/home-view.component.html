@@ -7,7 +7,10 @@
         <mat-card class="item">
           <mat-card-content>
             <img [src]="item.src" alt="Imagen" width="60px">
-            <p>Versusmatic</p> <!-- Texto debajo de la imagen -->
+            @for (item_title of item_titles; track item_title){
+              <p>{{item_title.title}}</p>
+            }
+            <p> </p> <!-- Texto debajo de la imagen -->
             <div class="rounded-boxes">
               <div class="rounded-box">
                 <h3>Ecuaciones</h3> <!-- Título de la primera caja redondeada -->
@@ -30,16 +33,16 @@
 <section class="section-body">
   <div class="container-premium">
     <div class="container-cta">
-      <h1 style="margin-left: 20px">
+      <h1 class="plan-title">
         ¿Quieres tener todos <br> los juegos disponibles? <br>
       </h1>
       <button mat-raised-button color="primary" class="premium-btn" (click)="redirectToPremium()">Hazte Premium</button>
     </div>
-    <img src="assets/login-image-1.png" alt="pic cta premium" style="width: 300px; height: 300px">
+    <img class="plan-img" src="assets/login-image-1.png" alt="pic cta premium" style="width: 300px; height: 300px">
   </div>
 
   <div class="container-progress">
-    <img src="assets/pic-cta-progress.png" alt="pic cta progress" style="width: 375px; height: 300px">
+    <img class="progress-img" src="assets/pic-cta-progress.png" alt="pic cta progress" style="width: 375px; height: 300px">
     <div class="redirect-view-progress">
       <h1>{{text}}<br>{{text1}}<br>{{text2}}</h1>
         <button mat-raised-button color="primary" class="progress-btn" (click)="redirectToProgress()">Ver progreso</button>

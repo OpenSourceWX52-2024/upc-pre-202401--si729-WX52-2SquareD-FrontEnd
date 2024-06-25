@@ -1,9 +1,11 @@
 .section-game {
   position: relative; /* Permite posicionar los botones de navegación de forma absoluta */
 }
+
 .carousel {
   overflow: hidden;
-  width: 900px; /* Ancho del carrusel, ajusta según necesites */
+  width: 90%; /* Cambiado a porcentaje para ser más responsivo */
+  max-width: 900px; /* Ancho máximo */
   margin: auto;
   position: relative;
 }
@@ -13,18 +15,20 @@
   transition: margin-left 0.5s;
 }
 
-.game{
-  font-size: 48px;
+.game {
+  font-size: 3rem; /* Cambiado a rem para ser más responsivo */
   font-family: 'Alfa Slab One', cursive;
-  margin-top: 40px;
-  margin-left: 30%;
-  margin-bottom: 40px;
+  margin: 2vh;
+  margin-left: 22%; /* Centrando el texto horizontalmente */
+  justify-content: left;
 }
+
 .item {
   flex: 0 0 auto;
-  width: 290px; /* Ancho de cada elemento, ajusta según necesites */
-  height: 416px; /* Altura de cada elemento, ajusta según necesites */
-  margin: 5px 5px 30px 5px;
+  width: 80%; /* Cambiado a porcentaje para ser más responsivo */
+  max-width: 290px; /* Ancho máximo */
+  height: 416px; /* Altura fija */
+  margin: 5px; /* Ajuste de márgenes */
   background-color: #ffffff; /* Color de fondo de los elementos */
   display: flex;
   flex-direction: column;
@@ -32,6 +36,7 @@
   align-items: center;
   border-radius: 20px;
 }
+
 .prev-btn,
 .next-btn {
   position: absolute;
@@ -42,27 +47,28 @@
   outline: none;
   cursor: pointer;
   font-size: 40px;
-  bottom:40%;
+  bottom: 40%;
 }
-.prev-btn {
 
-  left: 25%; /* Ajusta la posición horizontal del botón "Anterior" según sea necesario */
+.prev-btn {
+  left: 10%; /* Ajusta la posición horizontal del botón "Anterior" */
 }
 
 .next-btn {
-  right: 25%; /* Ajusta la posición horizontal del botón "Siguiente" según sea necesario */
+  right: 10%; /* Ajusta la posición horizontal del botón "Siguiente" */
 }
 
-.container-premium{
+.container-premium {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%);
+  background: linear-gradient(to bottom, #19456B 0%, #1B4972 50%, #3187D1 100%)!important;
   padding: 50px;
+  text-align: center; /* Centro de texto */
 }
 
-.container-premium h1{
+.container-premium h1 {
   font-family: 'Alfa Slab One', cursive;
   font-size: 2.5rem;
   color: white;
@@ -81,6 +87,11 @@
   font-weight: bold;
   padding: 20px 20px;
 }
+
+.plan-title{
+  margin-left: 20px;
+}
+
 /* Estilo para el texto debajo de la imagen */
 p {
   width: 100%; /* Ajusta el ancho al 100% de la tarjeta */
@@ -90,10 +101,12 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 img {
   width: 100%; /* Ajusta el ancho al 100% de la tarjeta */
   height: 30%; /* Ajusta la altura al 30% de la tarjeta */
 }
+
 mat-card-content {
   display: flex;
   flex-direction: column;
@@ -101,19 +114,22 @@ mat-card-content {
   align-items: center;
   margin-top: 110px;
 }
-.game_title{
+
+.game_title {
   font-size: 1.5em; /* Ajusta el tamaño de la fuente de los títulos en las cajas redondeadas */
   margin-top: 20px;
   font-family: Bitter, sans-serif;
   font-weight: bold;
 }
+
 .rounded-box {
-  width: 110%; /* Ajusta el ancho al 100% de la tarjeta */
-  height: 7%; /* Ajusta la altura al 25% de la tarjeta */
-  border: 1px solid #000; /* Color del borde */
+  width: 100%; /* Ajusta el ancho al 100% de la tarjeta */
+  height: 25px; /* Ajusta la altura automáticamente */
+  border: 1px transparent;
   border-radius: 10px; /* Radio del borde para hacerlo redondeado */
-  padding: 1px;
-  color:white;
+  padding: 3px;
+  margin: 10px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,15 +137,15 @@ mat-card-content {
 }
 
 .rounded-box h3 {
-  font-size: 0.5em; /* Ajusta el tamaño de la fuente de los títulos en las cajas redondeadas */
+  font-size: 1em; /* Ajusta el tamaño de la fuente de los títulos en las cajas redondeadas */
   margin-top: 20px;
 }
 
-.container-cta{
+.container-cta {
   padding-right: 60px;
 }
 
-.container-progress{
+.container-progress {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,25 +153,24 @@ mat-card-content {
   padding: 50px;
 }
 
-.container-progress h1{
+.container-progress h1 {
   font-family: 'Alfa Slab One', cursive;
   font-size: 2.5rem;
   color: #19456C;
   line-height: 55px;
 }
 
-.redirect-view-progress{
+.redirect-view-progress {
   text-align: center;
   font-size: 1.2rem;
   color: white;
   border: none;
   margin-top: 20px;
-  margin-left: 20px;
   font-weight: bold;
   padding: 50px;
 }
 
-.progress-btn{
+.progress-btn {
   font-family: "Averia Serif Libre", serif;
   background: linear-gradient(to bottom, #16C79A 0%, #3EE9BE 50%, #3EE9BE 100%);
   font-size: 1.2rem;
@@ -167,11 +182,132 @@ mat-card-content {
   font-weight: bold;
   padding: 20px 20px;
 }
-h1{
+
+h1 {
   font-family: 'Alfa Slab One', cursive;
   font-size: 2.5rem;
   color: #19456C;
   line-height: 55px;
 }
 
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+  .carousel {
+    width: 80%;
+  }
 
+  .game {
+    font-size: 2rem;
+    margin-left: 15%;
+  }
+
+  .item {
+    width: 250px;
+    height: 350px;
+  }
+
+  .prev-btn {
+    left: 15%;
+  }
+
+  .next-btn {
+    right: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    width: 100%;
+  }
+
+  .game {
+    font-size: 1.8rem;
+    margin-left: 10%;
+  }
+
+  .item {
+    width: 220px;
+    height: 320px;
+  }
+
+  .prev-btn {
+    left: 10%;
+  }
+
+  .next-btn {
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .game {
+    font-size: 1.6rem;
+    margin-left: 5%;
+  }
+
+  .item {
+    width: 180px;
+    height: 280px;
+  }
+
+  .prev-btn {
+    left: 5%;
+  }
+
+  .next-btn {
+    right: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .game {
+    font-size: 1.4rem;
+    margin: 20px auto;
+  }
+
+  .item {
+    width: 150px;
+    height: 250px;
+  }
+
+  .plan-img{
+  display:none;
+  }
+  .prev-btn,
+  .next-btn {
+    font-size: 30px;
+  }
+
+  .container-premium {
+    padding: 20px;
+  }
+
+  .plan-title{
+    font-size: 1.5rem;
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .premium-btn {
+    font-size: 1rem;
+    padding: 15px 10px;
+    margin-left: 60px;
+  }
+
+  .container-progress {
+    padding: 20px;
+  }
+
+  .progress-img{
+    display:none;
+  }
+  .progress-btn {
+    font-size: 1rem;
+    padding: 15px 10px;
+    margin-right: 25px;
+  }
+
+  .redirect-view-progress {
+    padding: 10px;
+  }
+}

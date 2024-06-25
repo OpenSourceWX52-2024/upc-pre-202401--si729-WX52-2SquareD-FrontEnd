@@ -17,11 +17,18 @@ import {UserSharedService} from "../../../2squareD/services/user-shared.service"
 export class HomeViewComponent implements OnInit{
   items = [
     { src: 'assets/game-screen1.png' },
-    { src: 'assets/game-screen1.png' },
-    { src: 'assets/game-screen1.png' },
+    { src: 'assets/game-screen2.png' },
+    { src: 'assets/game-screen3.png' },
     { src: 'assets/game-screen1.png' },
     { src: 'assets/game-screen1.png' },
   ];
+
+  item_titles = [
+    { title: 'Versusmatic' },
+    { title: 'Calculo Mental' },
+    { title: 'FracPizza!' },
+    ]
+
   text: string = '';
   text1: string = '';
   text2: string = '';
